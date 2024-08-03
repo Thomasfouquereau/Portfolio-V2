@@ -1,0 +1,221 @@
+:root {
+    --couleur-principale: #dbdadf;
+    --couleur-secondaire: #ffffff;
+    --couleur-tertiaire: #252525;
+}
+
+body {
+    background-color: var(--couleur-principale);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--couleur-tertiaire);
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 46vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 7vw;
+    margin-bottom: 5vw;
+}
+
+.header__links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2vw;
+    ;
+}
+
+.header__links img {
+    width: 1.5vw;
+    height: 1.5vw;
+    cursor: pointer;
+}
+
+.header__description {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+}
+
+.header__description span {
+    font-size: 2.5vw;
+    font-weight: 600;
+}
+
+.header__title {
+    font-size: 7.8vw;
+    font-weight: 700;
+    margin: 0;
+}
+
+.createur {
+    font-size: 1vw;
+}
+
+.carte-container {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 70vw;
+    height: 37vw;
+}
+
+.carte_cadre {
+    width: 100%;
+    height: 100%;
+    background-color: var(--couleur-tertiaire);
+    border-radius: 0.5vw;
+    position: relative;
+}
+
+.carte_sub_cadre {
+    position: absolute;
+    width: 83%;
+    height: 83%;
+    background-color: #215dabb6;
+    border-radius: 0.5vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carte_sub_cadre img {
+    position: absolute;
+    border-radius: 0.5vw;
+    width: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.info-left,
+.info-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-right {
+    align-items: flex-end;
+    text-align: right;
+}
+
+.info-left :nth-child(1),
+.info-right :nth-child(1) {
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+.info-left :nth-child(2),
+.info-right :nth-child(2) {
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.carte {
+    width: 70vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.cadre {
+    width: 33vw;
+    height: 25vw;
+    background-color: var(--couleur-tertiaire);
+    border-radius: 0.5vw;
+    position: relative;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1)0.7s;
+}
+
+.cadre::after {
+    display: none;
+    content: "";
+    position: absolute;
+    width: 88.2%;
+    height: 4vw;
+    background: rgb(37,37,37);
+    background: linear-gradient(0deg, rgba(37,37,37,1) 0%, rgba(37,37,37,0.8337710084033614) 29%, rgba(37,37,37,0.53125) 59%, rgba(37,37,37,0) 99%);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1)0.7s;
+    bottom: 1.9vw;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    
+}
+
+.cadre:hover::after {
+    display: block;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1)0.7s;
+}
+
+.cadre img {
+    width: 88%;
+    border-radius: 0.5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1)0.7s;
+    z-index: 1;
+}
+
+
+.section-description {
+    width: 70vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10vw;
+    margin-bottom: 2vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description-text :nth-child(1) {
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+.description-text :nth-child(2) {
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+
+.description {
+    width: 70vw;
+    margin-bottom: 10vw;
+    font-size: 1.5vw;
+    font-weight: 200;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    word-spacing: 0.2vw;
+    letter-spacing: 0.03vw;
+    line-height: 130%;
+    margin-top: 0;
+}
