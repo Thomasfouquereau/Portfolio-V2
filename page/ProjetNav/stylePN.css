@@ -88,6 +88,10 @@ section {
 }
 
 @media screen and (max-width: 900px) {
+    .header-a-la-une_content {
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+    }
 
     .img-a-la-une-BG {
         width: 93vw;
@@ -96,6 +100,25 @@ section {
 
     .img-a-la-une {
         width: 90vw;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .header-a-la-une_content {
+        margin-top: 15vw;
+        margin-bottom: 15vw;
+    }
+
+    .img-a-la-une-BG {
+        width: 95vw;
+        height: 53vw;
+        border-radius: 3vw;
+    }
+
+    .img-a-la-une {
+        width: 90vw;
+        border-radius: 1.5vw;
     }
 
 }
