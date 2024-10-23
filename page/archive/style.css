@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(17, 5, 5);
+    background: linear-gradient(40deg, rgba(17, 5, 5, 1) 0%, rgba(3, 28, 77, 1) 100%);
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+}
+
+.Header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    height: 100vh;
+}
+
+.Header-container h1 {
+    font-size: 10.5rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+.Header-container p {
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+.Header-bg {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+@keyframes bg-stick_bottom1 {
+    0% {
+        height: 40vw;
+    }
+    50% {
+        height: 30vw;
+    }
+    100% {
+        height: 40vw;
+    }
+    
+}
+@keyframes bg-stick_bottom2 {
+    0% {
+        height: 10vw;
+        background: white;
+    }
+    50% {
+        height: 35vw;
+        background: rgba(242, 242, 242, 0.748);
+    }
+    100% {
+        height: 10vw;
+        background: white;
+    }
+}
+@keyframes bg-stick_top1 {
+    0% {
+        height: 5vw;
+    }
+    25% {
+        height: 20vw;
+    }
+    50% {
+        transform: translateY(calc(100vh - 5vw));
+        height: 5vw;
+    }
+    75% {
+        height: 20vw;
+    }
+    100% {
+        height: 5vw;
+        border-radius: 0%;
+    }
+    
+}
+@keyframes bg-stick_top2 {
+    0% {
+        height: 45vw;
+    }
+
+    50% {
+        height: 28vw;
+    }
+
+    100% {
+        height: 45vw;
+    }
+    
+}
+@keyframes bg-stick_top3 {
+    0% {
+        height: 35vw;
+    }
+
+    50% {
+        height: 20vw;
+    }
+
+    100% {
+        height: 35vw;
+    }
+    
+}
+
+.Bg-stick_bottom-1::after,
+.Bg-stick_bottom-2::after,
+.Bg-stick_top-1::after,
+.Bg-stick_top-2::after,
+.Bg-stick_top-3::after {
+    content: '';
+    position: absolute;
+    width: 0.2vw;
+    background: white;
+}
+
+.Bg-stick_bottom-1::after {
+    height: 40vw;
+    bottom: 0;
+    left: 10vw;
+    animation: bg-stick_bottom1 cubic-bezier(.17,.67,.83,.67) 5s infinite;
+}
+
+.Bg-stick_bottom-2::after {
+    height: 30vw;
+    bottom: 0;
+    left: 20vw;
+    animation: bg-stick_bottom2 cubic-bezier(.34,.13,.26,.82) 7s infinite;
+}
+
+.Bg-stick_top-1::after {
+    height: 30vw;
+    top: 0;
+    right: 10vw;
+    animation: bg-stick_top1  5s infinite;
+}
+
+.Bg-stick_top-2::after {
+    height: 45vw;
+    top: 0;
+    right: 20vw;
+    animation: bg-stick_top2 cubic-bezier(.14,.63,.79,.97) 10s infinite;
+}
+
+.Bg-stick_top-3::after {
+    height: 35vw;
+    top: 0;
+    right: 30vw;
+    animation: bg-stick_top3  cubic-bezier(.34,.13,.26,.82) 7s infinite;
+}

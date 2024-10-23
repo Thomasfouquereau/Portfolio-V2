@@ -12,6 +12,13 @@ body {
     color: var(--couleur-secondaire);
 }
 
+@media screen and (min-width: 1900px) {
+    section {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
 h1 {
     margin: 0;
 }
@@ -70,14 +77,19 @@ section {
     border-radius: 0.5vw;
 }
 
-
+@media screen and (max-width: 900px) {
+    .img-a-la-une {
+        width: 180vw;
+        border-radius: 10.5vw;
+    }
+}
 
 .projet-header {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20vw;
-    margin-bottom: 20vw;
+    margin-bottom: 18vw;
 }
 
 .projet-header span {
@@ -127,7 +139,6 @@ section {
     display: flex;
     justify-content: space-between;
     width: 70%;
-    margin: 1vw;
 }
 
 .projet-card span {
@@ -136,30 +147,8 @@ section {
     color: var(--couleur-secondaire);
 }
 
-@keyframes text-pop-up-top {
-    0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-transform-origin: 50% 50%;
-        transform-origin: 50% 50%;
-        text-shadow: none;
-    }
-
-    100% {
-        -webkit-transform: translateY(-50px);
-        transform: translateY(-50px);
-        -webkit-transform-origin: 50% 50%;
-        transform-origin: 50% 50%;
-        text-shadow: 0 1px 0 var(--couleur-secondaire-animation), 0 2px 0 var(--couleur-secondaire-animation), 0 3px 0 var(--couleur-secondaire-animation), 0 4px 0 var(--couleur-secondaire-animation), 0 5px 0 var(--couleur-secondaire-animation), 0 6px 0 var(--couleur-secondaire-animation), 0 7px 0 var(--couleur-secondaire-animation), 0 8px 0 var(--couleur-secondaire-animation), 0 9px 0 var(--couleur-secondaire-animation), 0 50px 30px rgba(0, 0, 0, 0.3);
-    }
-}
-
 .projet-card_title {
     font-size: 6vw !important;
     font-weight: 700 !important;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
-}
-
-.projet-card_title:hover {
-    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    padding: 1vw;
 }
