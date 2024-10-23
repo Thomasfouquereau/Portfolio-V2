@@ -65,17 +65,19 @@ header {
 
 @media screen and (max-width: 500px) {
     .header-location-container {
-        font-size: 12.5vw;
+        font-size: 4.5vw;
     }
 
     .header-location-gps {
-        top: 23.5vw;
-        font-size: 5.7vw;
+        top: 8vw;
+        font-size: 2.7vw;
         left: 0vw;
     }
 
     .header-contact {
-        font-size: 12.5vw;
+        font-size: 4.5vw;
+        margin-top: 4vw;
+        font-weight: 700;
     }
 }
 
@@ -199,36 +201,36 @@ header {
         width: 90%;
         margin-top: 33vw;
         h1 {
-            font-size: 23vw;
+            font-size: 10vw;
         }
     }
 
     .sub-title-top {
-        font-size: 12vw;
-        margin-right: 2vw;
+        font-size: 3vw;
+        margin-right: 1vw;
     }
 
     .sub-title-top::before {
-        width: 50%;
-        border-radius: 2vw;
+        width: 51%;
+        border-radius: 1vw;
     }
 
     .main-content-bottom {
         width: 90%;
-        margin-top: -13vw;
+        margin-top: -6vw;
         h1 {
-            font-size: 23vw;
+            font-size: 10vw;
         }
     }
 
     .sub-title-bottom {
-        font-size: 7vw;
-        margin-left: 2vw;
+        font-size: 3vw;
+        margin-left: 1vw;
     }
 
     .sub-title-bottom::before {
-        width: 56%;
-        border-radius: 2vw;
+        width: 57%;
+        border-radius: 1vw;
     }
 }
 
@@ -302,47 +304,31 @@ header {
 
 @media screen and (max-width: 500px) {
     .section {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin-top: 9vw;
-        height: 20vw;
+        flex-direction: column;
+        margin-top: 33vw;
+        height: 90vw;
+        gap: 5vw;
     }
 
     .card-link-left,
     .card-link-right {
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-
+        width: 90%;
         h2 {
-            font-size: 6vw;
-            font-weight: 700;
-            margin: 0;
+            font-size: 12vw;
         }
-
         p {
-            font-size: 1.5vw;
+            font-size: 4vw;
             font-weight: 400;
             margin: 0;
         }
     }
 
     .card-link-right {
-        background-color: var(--couleur-secondaire);
-        color: var(--couleur-principale);
-        border-radius: 1.5vw;
+        border-radius: 2.5vw;
     }
 
     .card-sub-title-left,
     .card-sub-title-right {
-        font-size: 1vw;
-        font-weight: 400;
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
+        font-size: 2.5vw;
     }
 }
