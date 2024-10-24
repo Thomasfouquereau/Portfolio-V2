@@ -263,7 +263,6 @@ body {
     font-weight: 600;
 }
 
-
 .description {
     width: 70vw;
     margin-bottom: 10vw;
@@ -281,6 +280,7 @@ body {
     .header-container {
         width: 60vw;
     }
+    
     .header__links {
         margin-bottom: 2vw;
     }
@@ -376,7 +376,6 @@ body {
         font-weight: 600;
     }
     
-    
     .description {
         width: 90vw;
         margin-bottom: 30vw;
@@ -386,5 +385,4 @@ body {
         line-height: 160%;
         font-weight: 500;
     }
-    
 }

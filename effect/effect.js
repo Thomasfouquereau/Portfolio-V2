@@ -14,6 +14,7 @@ document.querySelectorAll('a, button, #zoomable').forEach(element => {
     element.addEventListener('mouseenter', () => {
         customCursor.classList.add('zoom');
         element.classList.add('zoomable');
+        
     });
     element.addEventListener('mouseleave', () => {
         customCursor.classList.remove('zoom');
