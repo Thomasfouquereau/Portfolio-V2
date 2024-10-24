@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --couleur-principale: #F7F7F2;
     --couleur-secondaire: #252525;
@@ -88,7 +92,7 @@ header {
     align-items: baseline;
     width: 50%;
     margin: auto;
-    margin-top: 7vw;
+    margin-top: 9vw;
     font-size: 1.5vw;
 
     h1 {
@@ -238,7 +242,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 7vw;
+    margin-top: 9vw;
     height: 18vw;
     margin-bottom: 20vw;
 }
