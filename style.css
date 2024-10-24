@@ -267,8 +267,7 @@ header {
 }
 
 .card-link-left:hover {
-    background-color: var(--couleur-secondaire);
-    color: var(--couleur-principale);
+    transform: scale(1.05);
 }
 
 .card-link-right {
@@ -277,8 +276,7 @@ header {
 }
 
 .card-link-right:hover {
-    background-color: var(--couleur-principale);
-    color: var(--couleur-secondaire);
+    transform: scale(1.05);
 }
 
 
