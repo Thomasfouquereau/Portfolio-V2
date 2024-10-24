@@ -12,6 +12,26 @@ body {
     color: var(--couleur-tertiaire);
 }
 
+#A-TechProBG {
+    background-color: #bcffda;
+}
+
+#RenoLandesBG{
+    background-color: #88a3c6b6;
+}
+
+#NihongoBG{
+    background-color: #f8e5e2;
+}
+
+#RenoLandesV1BG{
+    background-color: #dcdffe;
+}
+
+#SitePresBG{
+    background-color: #fad6e0;
+}
+
 .header-container {
     display: flex;
     flex-direction: column;
@@ -79,11 +99,31 @@ body {
     position: absolute;
     width: 83%;
     height: 83%;
-    background-color: #215dabb6;
+    
     border-radius: 0.5vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#A-TechPro{
+    background-color: #00ff738f;
+}
+
+#RenoLandes{
+    background-color: #215dabb6;
+}
+
+#Nihongo{
+    background-color: #f75c48b5;
+}
+
+#RenoLandesV1{
+    background-color: #5465ffce;
+}
+
+#SitePres{
+    background-color: #fa7498be;
 }
 
 .carte_sub_cadre img {
@@ -136,6 +176,7 @@ body {
     transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cadre {
@@ -145,6 +186,7 @@ body {
     border-radius: 0.5vw;
     position: relative;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1)0.7s;
+    margin-top: 2vw;
 }
 
 .cadre::after {
