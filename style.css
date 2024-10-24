@@ -1,6 +1,7 @@
 :root {
-    --couleur-principale: #f6f6fd;
-    --couleur-secondaire: #353535;
+    --couleur-principale: #F7F7F2;
+    --couleur-secondaire: #252525;
+    --couleur-secondaire-animation: #141414;
 }
 
 body {
@@ -143,7 +144,6 @@ header {
     margin-left: 0.5vw;
     transform: translateY(-0.4vw);
     position: relative;
-
     span {
         color: var(--couleur-principale);
     }
@@ -251,7 +251,8 @@ header {
     align-items: center;
     justify-content: center;
     height: 100%;
-
+    border-radius: 1.5vw;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.7s;
     h2 {
         font-size: 6vw;
         font-weight: 700;
@@ -265,11 +266,21 @@ header {
     }
 }
 
+.card-link-left:hover {
+    background-color: var(--couleur-secondaire);
+    color: var(--couleur-principale);
+}
+
 .card-link-right {
     background-color: var(--couleur-secondaire);
     color: var(--couleur-principale);
-    border-radius: 1.5vw;
 }
+
+.card-link-right:hover {
+    background-color: var(--couleur-principale);
+    color: var(--couleur-secondaire);
+}
+
 
 .card-sub-title-left,
 .card-sub-title-right {

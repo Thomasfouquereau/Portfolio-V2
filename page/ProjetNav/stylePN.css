@@ -105,6 +105,19 @@ section {
 }
 
 @media screen and (max-width: 500px) {
+    .header-a-la-une{
+        padding-top: 10vw;
+        padding-bottom: 30vw;
+    }
+
+    .header-a-la-une_content span {
+        font-size: 3vw;
+    }
+    
+    .header-a-la-une_title {
+        font-size: 13vw !important;
+    }
+
     .header-a-la-une_content {
         margin-top: 15vw;
         margin-bottom: 15vw;
@@ -120,7 +133,6 @@ section {
         width: 90vw;
         border-radius: 1.5vw;
     }
-
 }
 
 .projet-header {
@@ -191,4 +203,46 @@ section {
     font-weight: 700 !important;
     padding: 1vw;
     text-align: center  ;
+}
+
+@media screen and (max-width: 500px) {
+    .projet-header {
+        margin-top: 25vw;
+        margin-bottom: 25vw;
+    }
+
+    .projet-header span {
+        font-size: 3.5vw;
+    }
+    
+    .projet-header h1 {
+        font-size: 15vw;
+    }
+
+    .last-projet{
+        width: 80vw;
+        margin-bottom: 25vw;
+    }
+
+    .last-projet span {
+        font-size: 4vw;
+    }
+    
+    .projet-container {
+        width: 80vw;
+        margin-bottom: 20vw;
+    }
+    
+    .projet-card {
+        width: 65vw;
+    }
+    
+    .projet-card span {
+        font-size: 3vw;
+    }
+    
+    .projet-card_title {
+        font-size: 10vw !important;
+        padding: 3vw;
+    }
 }
