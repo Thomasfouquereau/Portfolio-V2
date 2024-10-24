@@ -22,3 +22,17 @@ a{
 .custom-cursor.zoom {
     transform: translate(-50%, -50%) scale(2);
 }
+
+@media (max-width: 900px) {
+    body {
+        cursor: auto;
+    }
+
+    a {
+        cursor: auto;
+    }
+
+    .custom-cursor {
+        display: none;
+    }
+}
