@@ -39,22 +39,23 @@ const endValue = window.innerWidth <= 900 ? "top 40%" : "top 30%";
 // Créer une animation pour chaque .projet-card
 projetCards.forEach(card => {
     gsap.fromTo(card, 
-        { opacity: 0.3, x: window.innerWidth <= 900 ? 150 : 250, scale: 0.7 },  
+        { opacity: 0.3, x: window.innerWidth <= 900 ? 100 : 250, scale: 0.7 },  // Réduire la distance de déplacement pour les mobiles
         { 
             opacity: 1, 
-            y: 0, 
-            duration: window.innerWidth <= 900 ? 1.2 : 1,  
+            x: 0,
+            scale: 1,
+            duration: window.innerWidth <= 900 ? 1.2 : 1,  // Durée ajustée pour les mobiles
             ease: "power1.inOut",
             scrollTrigger: {
                 trigger: card,
-                start: startValue,  
-                end: endValue,      
-                toggleActions: "play reverse play reverse", 
-                markers: true,  // Affiche les marqueurs de ScrollTrigger
+                start: startValue,  // Utiliser la valeur de start basée sur la largeur de la fenêtre
+                end: endValue,      // Utiliser la valeur de end basée sur la largeur de la fenêtre
+                toggleActions: "play reverse play reverse",  // Joue l'animation à l'entrée et la renverse à la sortie
+                markers: false,  // Désactiver les marqueurs pour améliorer les performances
                 onEnter: () => gsap.to(card, { opacity: 1, x: 0, scale: 1, duration: 1 }),
-                onLeave: () => gsap.to(card, { opacity: 0.3, x: window.innerWidth <= 900 ? 150 : 250, scale: 0.7, duration: 1 }),
+                onLeave: () => gsap.to(card, { opacity: 0.3, x: window.innerWidth <= 900 ? 100 : 250, scale: 0.7, duration: 1 }),
                 onEnterBack: () => gsap.to(card, { opacity: 1, x: 0, scale: 1, duration: 1 }),
-                onLeaveBack: () => gsap.to(card, { opacity: 0.3, x: window.innerWidth <= 900 ? 150 : 250, scale: 0.7, duration: 1 })
+                onLeaveBack: () => gsap.to(card, { opacity: 0.3, x: window.innerWidth <= 900 ? 100 : 250, scale: 0.7, duration: 1 })
             }
         }
     );
