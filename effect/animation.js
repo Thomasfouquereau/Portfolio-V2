@@ -39,22 +39,22 @@ const endValue = window.innerWidth <= 900 ? "top 40%" : "top 30%";
 // Créer une animation pour chaque .projet-card
 projetCards.forEach(card => {
     gsap.fromTo(card, 
-        { opacity: 0.3, x: 250, scale:0.7 },  // État initial
+        { opacity: 0.3, x: window.innerWidth <= 900 ? 150 : 250, scale: 0.7 },  
         { 
             opacity: 1, 
             y: 0, 
-            duration: 1, 
+            duration: window.innerWidth <= 900 ? 1.2 : 1,  
             ease: "power1.inOut",
             scrollTrigger: {
                 trigger: card,
                 start: startValue,  
-                end: endValue,  
+                end: endValue,      
                 toggleActions: "play reverse play reverse", 
-                markers: true,
-                onEnter: () => gsap.to(card, { opacity: 1, x: 0, scale:1, duration: 1 }),
-                onLeave: () => gsap.to(card, { opacity: 0.3, x: 250, scale:0.7, duration: 1 }),
-                onEnterBack: () => gsap.to(card, { opacity: 1, x: 0, scale:1, duration: 1 }),
-                onLeaveBack: () => gsap.to(card, { opacity: 0.3, x: 250, scale:0.7, duration: 1 })
+                markers: true,  // Affiche les marqueurs de ScrollTrigger
+                onEnter: () => gsap.to(card, { opacity: 1, x: 0, scale: 1, duration: 1 }),
+                onLeave: () => gsap.to(card, { opacity: 0.3, x: window.innerWidth <= 900 ? 150 : 250, scale: 0.7, duration: 1 }),
+                onEnterBack: () => gsap.to(card, { opacity: 1, x: 0, scale: 1, duration: 1 }),
+                onLeaveBack: () => gsap.to(card, { opacity: 0.3, x: window.innerWidth <= 900 ? 150 : 250, scale: 0.7, duration: 1 })
             }
         }
     );
