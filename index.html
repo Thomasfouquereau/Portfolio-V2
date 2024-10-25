@@ -23,7 +23,7 @@
         <a class="header-contact" id="cursorChangeContact">contact</a>
     </header>
     <main >
-        <div class="main-content-top">
+        <div class="main-content-top" >
             <p class="sub-title-top">Front-end <span id="cursorChangesub-title-top">Developer</span></p>
             <h1 id="cursorChangeName">Thomas</h1>
         </div>
@@ -34,7 +34,7 @@
     </main>
 
     <div class="section">
-        <a class="card-link-left" href="./page/Projet/Renolandes.html" >
+        <a class="card-link-left" href="./page/Projet/Renolandes.html" id="cursorChangeRenolandes"  >
             <p>Dernier Projet Terminé</p>
             <h2>RenoLandes</h2>
             <div class="card-sub-title-left">
@@ -42,7 +42,7 @@
                 <span>Terminé</span>
             </div>
         </a>
-        <a class="card-link-right" href="./page/Projet/Nihongo.html" >
+        <a class="card-link-right" href="./page/Projet/Nihongo.html" id="cursorChangeNihongo" >
             <p>Projet en cours</p>
             <h2>NIHONGO</h2>
             <div class="card-sub-title-right">
@@ -63,7 +63,11 @@
                 </div>
             </div>
             <div id="cursorChangeImg" class="img-a-la-une-BG">
-                <img class="img-a-la-une" src="./addon/Nihongo .png" />
+                <picture>
+                    <source srcset="./addon/Nihongo .webp" type="image/webp">
+                    <source srcset="./addon/Nihongo .avif" type="image/avif">
+                    <img class="img-a-la-une" src="./addon/Nihongo .jpg" alt="NIHONGO">
+                </picture>
             </div>
         </div>
     </section>
@@ -85,7 +89,7 @@
                     <span id="cursorChangeDesign">Designer</span>
                     <span id="EnCours">En cours</span>
                 </div>
-                <a class="projet-card_title" href="./page/Projet/Nihongo.html">NIHONGO</a>
+                <a id="cursorChangeNihongo" class="projet-card_title" href="./page/Projet/Nihongo.html">NIHONGO</a>
                 <div>
                     <span id="cursorChangeDesign">Web App</span>
                     <span id="cursorChangeDev">Développé</span>
@@ -99,7 +103,7 @@
                     <span id="cursorChangeDesign">Designer</span>
                     <span id="Terminee">Terminée</span>
                 </div>
-                <a class="projet-card_title" href="./page/Projet/Renolandes.html">RenoLandes</a>
+                <a class="projet-card_title" id="cursorChangeRenolandes" href="./page/Projet/Renolandes.html">RenoLandes</a>
                 <div>
                     <span id="cursorChangeDev">Site vitrine</span>
                     <span id="cursorChangeDev">Développer</span>
@@ -113,7 +117,7 @@
                     <span id="cursorChangeDesign">Designer</span>
                     <span id="EnCours">En cours</span>
                 </div>
-                <a class="projet-card_title" href="./page/Projet/A-TechPro.html">A-TechPro</a>
+                <a class="projet-card_title" id="cursorChangeA-TechPro" href="./page/Projet/A-TechPro.html">A-TechPro</a>
                 <div>
                     <span id="cursorChangeDev">Site vitrine</span>
                     <span id="cursorChangeDev">Développer</span>
@@ -127,7 +131,7 @@
                     <span id="cursorChangeDesign">Designer</span>
                     <span id="EnCours">En cours</span>
                 </div>
-                <a class="projet-card_title" href="./page/Projet/CarteVl.html">Carte VL</a>
+                <a class="projet-card_title" id="cursorChangeCvl" href="./page/Projet/CarteVl.html">Carte VL</a>
                 <div>
                     <span id="cursorChangeDesign">Web App</span>
                     <span id="cursorChangeDev">Développer</span>
@@ -141,7 +145,7 @@
                     <span id="cursorChangeDesign">Designer</span>
                     <span id="Terminee">Terminée</span>
                 </div>
-                <a class="projet-card_title" href="./page/Projet/RenolandesV1.html">RenoLandesV1</a>
+                <a class="projet-card_title" id="cursorChangeRenolandesV1" href="./page/Projet/RenolandesV1.html">RenoLandesV1</a>
                 <div>
                     <span id="cursorChangeDev">Site vitrine</span>
                     <span id="cursorChangeDev">Développer</span>
@@ -154,7 +158,7 @@
                 <div>
                     <span id="Terminee">Terminée</span>
                 </div>
-                <a class="projet-card_title" href="./page/Projet/SitePres.html">Template de présentation</a>
+                <a class="projet-card_title" id="cursorChangePresentation" href="./page/Projet/SitePres.html">Template de présentation</a>
                 <div>
                     <span id="cursorChangeDev">Portfolio</span>
                     <span id="cursorChangeDev">Développer</span>
@@ -163,6 +167,8 @@
         </div>
     </section>
 </body>
+<script src="effect/effect.js" defer></script>
+<script src="effect/animation.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 </html>

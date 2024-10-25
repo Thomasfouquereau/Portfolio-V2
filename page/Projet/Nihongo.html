@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="./Projet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../../effect/effect.css">
+    <script src="../../effect/effect.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
@@ -25,7 +27,7 @@
                 <span>DEV | DESIGN</span>
             </div>
             <div class="header__title">
-                <span>NIHONGO</span>
+                <span id="cursorChangeTitle">NIHONGO</span>
             </div>
             <span class="createur">by A-TechPro</span>
         </div>
@@ -33,9 +35,13 @@
 
     <section>
         <div class="carte-container">
-            <div class="carte_cadre">
+            <div class="carte_cadre" id="cursorChangeImg">
                 <div class="carte_sub_cadre" id="Nihongo">
-                    <img src="../../addon/Nihongo .png" />
+                    <picture>
+                        <source srcset="./addon/Nihongo .webp" type="image/webp">
+                        <source srcset="./addon/Nihongo .avif" type="image/avif">
+                        <img class="img-a-la-une" src="../../addon/Nihongo .jpg" alt="NIHONGO">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -54,16 +60,16 @@
             </div>
         </div>
         <div class="carte">
-            <div class="cadre">
+            <div class="cadre" id="cursorChangeName">
                 <img src="../../addon/Nihongo 1.png" />
             </div>
-            <div class="cadre">
+            <div class="cadre" id="cursorChangeName">
                 <img src="../../addon/Nihongo 2.png" />
             </div>
-            <div class="cadre">
+            <div class="cadre" id="cursorChangeName">
                 <img src="../../addon/Nihongo 3.png" />
             </div>
-            <div class="cadre">
+            <div class="cadre" id="cursorChangeName">
                 <img src="../../addon/Nihongo 4.png" />
             </div>
         </div>
@@ -72,11 +78,11 @@
         <div class="section-description">
             <div class="description-text">
                 <span>NIHONGO</span>
-                <span>Description</span>
+                <span id="cursorChangeDescription">Description</span>
             </div>
             <img src="../../addon/contact icon.svg" />
         </div>
-        <p class="description">
+        <p class="description" id="cursorChangeDescription-text">
             NIHONGO est une application web entièrement designer et développé par A-TechPro. Elle est dédiée à l'apprentissage du japonais. Elle propose des des exercices de grammaire, des listes de vocabulaire, et des quiz pour tester ses connaissances. L'interface est conçue pour les débutants comme pour les utilisateurs avancés, permettant un apprentissage progressif et personnalisé. 
         </p>
 

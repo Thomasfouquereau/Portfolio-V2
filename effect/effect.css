@@ -7,13 +7,13 @@ a {
 }
 
 ::selection {
-    background: #9500ff; /* Couleur de fond de la sélection inversée */
-    color: #ffffff; /* Couleur du texte sélectionné inversée */
+    background: #9500ff; 
+    color: #ffffff; 
 }
 
 ::-moz-selection {
-    background: #9500ff; /* Couleur de fond de la sélection pour Firefox inversée */
-    color: #ffffff; /* Couleur du texte sélectionné pour Firefox inversée */
+    background: #9500ff;
+    color: #ffffff; 
 }
 
 .custom-cursor {
@@ -26,12 +26,66 @@ a {
     transform: translate(-50%, -50%);
     z-index: 10000;
     mix-blend-mode: difference;
-    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, height 0.4s ease-in-out, border-radius 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, height 0.4s ease-in-out, border-radius 0.4s ease-in-out, background 0.2s ease-in-out;
 }
 
-.custom-cursor.zoom {
+.custom-cursor.cursorChangeRenolandes {
     transform: translate(-50%, -50%) scale(2);
-    border: #7b13dd 0.07vw solid;
+    background-image: url('../addon/renolandes.png');
+    background-size: cover;
+    border-radius: 0.1vw;
+    width: 75px;
+    height: 40px;
+    mix-blend-mode: normal;
+}
+
+.custom-cursor.cursorChangeNihongo {
+    transform: translate(-50%, -50%) scale(2);
+    background-image: url('../addon/Nihongo .jpg');
+    background-size: cover;
+    border-radius: 0.1vw;
+    width: 75px;
+    height: 40px;
+    mix-blend-mode: normal;
+}
+
+.custom-cursor.cursorChangeA-TechPro {
+    transform: translate(-50%, -50%) scale(2);
+    background-image: url('../addon/A-TechPro.png');
+    background-size: cover;
+    border-radius: 0.1vw;
+    width: 75px;
+    height: 40px;
+    mix-blend-mode: normal;
+}
+
+.custom-cursor.cursorChangeCvl {
+    transform: translate(-50%, -50%) scale(2);
+    background-image: url('../addon/Cvl.png');
+    background-size: cover;
+    border-radius: 0.1vw;
+    width: 75px;
+    height: 50px;
+    mix-blend-mode: normal;
+}
+.custom-cursor.cursorChangeRenolandesV1 {
+    transform: translate(-50%, -50%) scale(2);
+    background-image: url('../addon/RenolandesV1.png');
+    background-size: cover;
+    border-radius: 0.1vw;
+    width: 75px;
+    height: 40px;
+    mix-blend-mode: normal;
+}
+
+.custom-cursor.cursorChangePresentation {
+    transform: translate(-50%, -50%) scale(2);
+    background-image: url('../addon/Site Presentation.png');
+    background-size: cover;
+    border-radius: 0.1vw;
+    width: 75px;
+    height: 40px;
+    mix-blend-mode: normal;
 }
 
 .custom-cursor.cursorChangeName{
@@ -102,6 +156,20 @@ a {
     width: 100px;
     height: 34px;
     border-radius: 0.3vw  1vw;
+} 
+
+.custom-cursor.cursorChangeDescription{
+    transform: translate(-50%, -50%) scale(2);
+    width: 160px;
+    height: 34px;
+    border-radius: 0.3vw;
+} 
+
+.custom-cursor.cursorChangeDescription-text{
+    transform: translate(-50%, -50%) scale(2);
+    width: 12px;
+    height: 25px;
+    border-radius: 0.1vw;
 } 
 
 @media (max-width: 900px) {

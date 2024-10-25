@@ -9,7 +9,6 @@ document.addEventListener("mousemove", function(event) {
     customCursor.style.top = `${event.clientY}px`;
 });
 
-// Ajouter un effet de zoom lors du survol des éléments interactifs
 document.querySelectorAll('a, button, #zoomable').forEach(element => {
     element.addEventListener('mouseenter', () => {
         customCursor.classList.add('zoom');
@@ -21,7 +20,73 @@ document.querySelectorAll('a, button, #zoomable').forEach(element => {
     });
 });
 
-document.querySelectorAll('#cursorChangeName').forEach(element => {
+document.querySelectorAll('#cursorChangeNihongo').forEach(element => {
+    element.addEventListener('mouseenter', () => {
+        customCursor.classList.add('cursorChangeNihongo');
+        element.classList.add('cursorChangeNihongo');
+    });
+    element.addEventListener('mouseleave', () => {
+        customCursor.classList.remove('cursorChangeNihongo');
+        element.classList.remove('cursorChangeNihongo');
+    });
+});
+
+document.querySelectorAll('#cursorChangeRenolandes').forEach(element => {
+    element.addEventListener('mouseenter', () => {
+        customCursor.classList.add('cursorChangeRenolandes');
+        element.classList.add('cursorChangeRenolandes');
+    });
+    element.addEventListener('mouseleave', () => {
+        customCursor.classList.remove('cursorChangeRenolandes');
+        element.classList.remove('cursorChangeRenolandes');
+    });
+});
+
+document.querySelectorAll('#cursorChangeA-TechPro').forEach(element => {
+    element.addEventListener('mouseenter', () => {
+        customCursor.classList.add('cursorChangeA-TechPro');
+        element.classList.add('cursorChangeA-TechPro');
+    });
+    element.addEventListener('mouseleave', () => {
+        customCursor.classList.remove('cursorChangeA-TechPro');
+        element.classList.remove('cursorChangeA-TechPro');
+    });
+});
+
+document.querySelectorAll('#cursorChangeCvl').forEach(element => {
+    element.addEventListener('mouseenter', () => {
+        customCursor.classList.add('cursorChangeCvl');
+        element.classList.add('cursorChangeCvl');
+    });
+    element.addEventListener('mouseleave', () => {
+        customCursor.classList.remove('cursorChangeCvl');
+        element.classList.remove('cursorChangeCvl');
+    });
+});
+
+document.querySelectorAll('#cursorChangePresentation').forEach(element => {
+    element.addEventListener('mouseenter', () => {
+        customCursor.classList.add('cursorChangePresentation');
+        element.classList.add('cursorChangePresentation');
+    });
+    element.addEventListener('mouseleave', () => {
+        customCursor.classList.remove('cursorChangePresentation');
+        element.classList.remove('cursorChangePresentation');
+    });
+});
+
+document.querySelectorAll('#cursorChangeRenolandesV1').forEach(element => {
+    element.addEventListener('mouseenter', () => {
+        customCursor.classList.add('cursorChangeRenolandesV1');
+        element.classList.add('cursorChangeRenolandesV1');
+    });
+    element.addEventListener('mouseleave', () => {
+        customCursor.classList.remove('cursorChangeRenolandesV1');
+        element.classList.remove('cursorChangeRenolandesV1');
+    });
+});
+
+document.querySelectorAll('#cursorChangeName, #CarteVlcadre').forEach(element => {
     element.addEventListener('mouseenter', () => {
         customCursor.classList.add('cursorChangeName');
         element.classList.add('cursorChangebleName');
@@ -129,5 +194,27 @@ document.querySelectorAll('#EnCours, #Terminee ').forEach(element => {
     element.addEventListener('mouseleave', () => {
         customCursor.classList.remove('cursorChangeStatus');
         element.classList.remove('cursorChangeStatus');
+    });
+});
+
+document.querySelectorAll('#cursorChangeDescription').forEach(element => {
+    element.addEventListener('mouseenter', () => {
+        customCursor.classList.add('cursorChangeDescription');
+        element.classList.add('cursorChangeDescription');
+    });
+    element.addEventListener('mouseleave', () => {
+        customCursor.classList.remove('cursorChangeDescription');
+        element.classList.remove('cursorChangeDescription');
+    });
+});
+
+document.querySelectorAll('#cursorChangeDescription-text').forEach(element => {
+    element.addEventListener('mouseenter', () => {
+        customCursor.classList.add('cursorChangeDescription-text');
+        element.classList.add('cursorChangeDescription-text');
+    });
+    element.addEventListener('mouseleave', () => {
+        customCursor.classList.remove('cursorChangeDescription-text');
+        element.classList.remove('cursorChangeDescription-text');
     });
 });

@@ -79,10 +79,15 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    img{
+        width: 70vw;
+        height: 37vw;
+    }
 }
 
 .img-a-la-une {
     width: 70vw;
+    height: 37vw;
     object-fit: cover;
     border-radius: 0.5vw;
 }
