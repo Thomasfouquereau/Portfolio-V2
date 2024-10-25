@@ -135,6 +135,11 @@ section {
     }
 }
 
+.projet-nav{
+    margin-bottom: 3vw;
+    overflow-y: hidden;
+}
+
 .projet-header {
     display: flex;
     flex-direction: column;
@@ -210,7 +215,59 @@ section {
     transform: scale(1.05);
 }
 
+#EnCours {
+    color: #a025bf;
+}
+
+#Terminee {
+    color: #25bfa0;
+}
+
+@media screen and (max-width: 900px) {
+    .projet-nav{
+        margin-bottom: 30vw;
+    }
+    .projet-header {
+        margin-top: 25vw;
+        margin-bottom: 25vw;
+    }
+
+    .projet-header span {
+        font-size: 2vw;
+    }
+    
+    .projet-header h1 {
+        font-size: 13vw;
+    }
+    
+    .last-projet{
+        width: 80vw;
+        margin-bottom: 25vw;
+    }
+
+    .last-projet span {
+        font-size: 4vw;
+    }
+    
+    .projet-card {
+        width: 65vw;
+    }
+    
+    .projet-card span {
+        font-size: 3vw;
+    }
+    
+    .projet-card_title {
+        font-size: 9vw !important;
+        padding: 3vw;
+    }
+}
+
 @media screen and (max-width: 500px) {
+    .projet-nav{
+        margin-bottom: 55vw;
+    }
+
     .projet-header {
         margin-top: 25vw;
         margin-bottom: 25vw;

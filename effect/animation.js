@@ -33,6 +33,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Sélectionner tous les éléments .projet-card
 const projetCards = document.querySelectorAll('.projet-card');
+const startValue = window.innerWidth <= 900 ? "top 65%" : "top 70%";
+const endValue = window.innerWidth <= 900 ? "top 40%" : "top 30%";
 
 // Créer une animation pour chaque .projet-card
 projetCards.forEach(card => {
@@ -45,9 +47,9 @@ projetCards.forEach(card => {
             ease: "power1.inOut",
             scrollTrigger: {
                 trigger: card,
-                start: "top 70%",  // Déclenche l'animation lorsque le haut de l'élément atteint 80% de la hauteur de la fenêtre
-                end: "top 30%",    // Termine l'animation lorsque le haut de l'élément atteint 20% de la hauteur de la fenêtre
-                toggleActions: "play reverse play reverse",  // Joue l'animation à l'entrée et la renverse à la sortie
+                start: startValue,  
+                end: endValue,  
+                toggleActions: "play reverse play reverse", 
                 markers: true,
                 onEnter: () => gsap.to(card, { opacity: 1, x: 0, scale:1, duration: 1 }),
                 onLeave: () => gsap.to(card, { opacity: 0.3, x: 250, scale:0.7, duration: 1 }),
