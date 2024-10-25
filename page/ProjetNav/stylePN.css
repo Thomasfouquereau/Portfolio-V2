@@ -137,7 +137,7 @@ section {
 
 .projet-nav{
     margin-bottom: 3vw;
-    overflow-y: hidden;
+    
 }
 
 .projet-header {
@@ -226,6 +226,7 @@ section {
 @media screen and (max-width: 900px) {
     .projet-nav{
         margin-bottom: 30vw;
+        overflow-y: hidden;
     }
     .projet-header {
         margin-top: 25vw;
