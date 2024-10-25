@@ -45,7 +45,7 @@ projetCards.forEach(card => {
                 start: startValue,  
                 end: endValue,  
                 toggleActions: "play reverse play reverse", 
-                markers: true,
+                // markers: true,
                 onEnter: () => gsap.to(card, { opacity: 1, x: 0, scale: 1, duration: 1 }),
                 onLeave: () => gsap.to(card, { opacity: 0.3, x: 250, scale: 0.7, duration: 1 }),
                 onEnterBack: () => gsap.to(card, { opacity: 1, x: 0, scale: 1, duration: 1 }),

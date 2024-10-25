@@ -262,7 +262,6 @@ header {
         font-weight: 700;
         margin: 0;
     }
-
     p {
         font-size: 1.5vw;
         font-weight: 400;
@@ -271,7 +270,7 @@ header {
 }
 
 .card-link-left:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) !important;
 }
 
 .card-link-right {
@@ -280,7 +279,7 @@ header {
 }
 
 .card-link-right:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) !important;
 }
 
 

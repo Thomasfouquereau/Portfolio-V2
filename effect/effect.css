@@ -6,6 +6,16 @@ a {
     cursor: none;
 }
 
+::selection {
+    background: #9500ff; /* Couleur de fond de la sélection inversée */
+    color: #ffffff; /* Couleur du texte sélectionné inversée */
+}
+
+::-moz-selection {
+    background: #9500ff; /* Couleur de fond de la sélection pour Firefox inversée */
+    color: #ffffff; /* Couleur du texte sélectionné pour Firefox inversée */
+}
+
 .custom-cursor {
     position: fixed;
     width: 40px;
@@ -16,12 +26,83 @@ a {
     transform: translate(-50%, -50%);
     z-index: 10000;
     mix-blend-mode: difference;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, height 0.4s ease-in-out, border-radius 0.4s ease-in-out;
 }
 
 .custom-cursor.zoom {
     transform: translate(-50%, -50%) scale(2);
+    border: #7b13dd 0.07vw solid;
 }
+
+.custom-cursor.cursorChangeName{
+    transform: translate(-50%, -50%) scale(2);
+    width: 40px;
+    height: 50px;
+    border-radius: 0.1vw;
+} 
+
+.custom-cursor.cursorChangesub-title-top{
+    transform: translate(-50%, -50%) scale(2);
+    width: 110px;
+    height: 38px;
+    border-radius: 0.4vw;
+} 
+
+.custom-cursor.cursorChangesub-title-bottom{
+    transform: translate(-50%, -50%) scale(2);
+    width: 95px;
+    height: 38px;
+    border-radius: 0.4vw;
+} 
+
+.custom-cursor.cursorChangeContact{
+    transform: translate(-50%, -50%) scale(2);
+    width: 80px;
+    height: 30px;
+    border-radius: 1vw;
+} 
+
+.custom-cursor.cursorChangeTitle{
+    transform: translate(-50%, -50%) scale(2);
+    width: 70px;
+    height: 85px;
+    border-radius: 0.3vw;
+} 
+
+.custom-cursor.cursorChangeImg{
+    transform: translate(-50%, -50%) scale(2);
+    width: 75px;
+    height: 55px;
+    border-radius: 0.3vw;
+} 
+
+.custom-cursor.cursorChangeTitlePROJET{
+    transform: translate(-50%, -50%) scale(2);
+    width: 80px;
+    height: 105px;
+    border-radius: 0.3vw;
+} 
+
+.custom-cursor.cursorChangeDesign{
+    transform: translate(-50%, -50%) scale(2);
+    width: 85px;
+    height: 34px;
+    border-radius: 0.3vw;
+} 
+
+.custom-cursor.cursorChangeDev{
+    transform: translate(-50%, -50%) scale(2);
+    width: 100px;
+    height: 34px;
+    border-radius: 0.3vw;
+}
+
+.custom-cursor.cursorChangeStatus{
+    transform: translate(-50%, -50%) scale(2);
+    width: 100px;
+    height: 34px;
+    border-radius: 0.3vw  1vw;
+} 
 
 @media (max-width: 900px) {
     body {
