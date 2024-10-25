@@ -37,7 +37,7 @@ const projetCards = document.querySelectorAll('.projet-card');
 // Créer une animation pour chaque .projet-card
 projetCards.forEach(card => {
     gsap.fromTo(card, 
-        { opacity: 0, y: 50 },  // État initial
+        { opacity: 0.3, x: 250, scale:0.7 },  // État initial
         { 
             opacity: 1, 
             y: 0, 
@@ -45,13 +45,14 @@ projetCards.forEach(card => {
             ease: "power1.inOut",
             scrollTrigger: {
                 trigger: card,
-                start: "top 80%",  // Déclenche l'animation lorsque le haut de l'élément atteint 80% de la hauteur de la fenêtre
-                end: "top 20%",    // Termine l'animation lorsque le haut de l'élément atteint 20% de la hauteur de la fenêtre
+                start: "top 70%",  // Déclenche l'animation lorsque le haut de l'élément atteint 80% de la hauteur de la fenêtre
+                end: "top 30%",    // Termine l'animation lorsque le haut de l'élément atteint 20% de la hauteur de la fenêtre
                 toggleActions: "play reverse play reverse",  // Joue l'animation à l'entrée et la renverse à la sortie
-                onEnter: () => gsap.to(card, { opacity: 1, y: 0, duration: 1 }),
-                onLeave: () => gsap.to(card, { opacity: 0, y: 50, duration: 1 }),
-                onEnterBack: () => gsap.to(card, { opacity: 1, y: 0, duration: 1 }),
-                onLeaveBack: () => gsap.to(card, { opacity: 0, y: 50, duration: 1 })
+                markers: true,
+                onEnter: () => gsap.to(card, { opacity: 1, x: 0, scale:1, duration: 1 }),
+                onLeave: () => gsap.to(card, { opacity: 0.3, x: 250, scale:0.7, duration: 1 }),
+                onEnterBack: () => gsap.to(card, { opacity: 1, x: 0, scale:1, duration: 1 }),
+                onLeaveBack: () => gsap.to(card, { opacity: 0.3, x: 250, scale:0.7, duration: 1 })
             }
         }
     );
