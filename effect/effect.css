@@ -2,7 +2,7 @@ body {
     cursor: none;
 }
 
-a{
+a {
     cursor: none;
 }
 
@@ -10,7 +10,7 @@ a{
     position: fixed;
     width: 40px;
     height: 40px;
-    background: white; 
+    background: white;
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
@@ -36,3 +36,78 @@ a{
         display: none;
     }
 }
+
+
+/* Défini les animation */
+
+/* @keyframes fadeInTop {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header-location-container{
+    animation: fadeInTop 0.7s ease-in-out;
+}
+
+.header-contact{
+    animation: fadeInTop 0.7s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate(-100px , -0.4vw);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px , -0.4vw);
+    }
+}
+
+.sub-title-top{
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate(100px , -0.4vw);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px , -0.4vw);
+    }
+}
+
+.sub-title-bottom{
+    animation: fadeInRight 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-link-left {
+    animation: fadeIn 0.7s ease-in-out ;
+}
+
+.card-link-right {
+    animation: fadeIn 0.7s ease-in-out;
+} */

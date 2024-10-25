@@ -21,3 +21,5 @@ document.querySelectorAll('a, button, #zoomable').forEach(element => {
         element.classList.remove('zoomable');
     });
 });
+
+
