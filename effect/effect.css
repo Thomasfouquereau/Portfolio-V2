@@ -29,6 +29,11 @@ a {
     transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, height 0.4s ease-in-out, border-radius 0.4s ease-in-out, background 0.2s ease-in-out;
 }
 
+.custom-cursor.zoom{
+    transform: translate(-50%, -50%) scale(2);
+    border-radius: 50%;
+} 
+
 .custom-cursor.cursorChangeRenolandes {
     transform: translate(-50%, -50%) scale(2);
     background-image: url('../addon/renolandes.png');
