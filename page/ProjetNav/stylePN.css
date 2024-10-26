@@ -101,6 +101,10 @@ section {
     .img-a-la-une-BG {
         width: 93vw;
         height: 50vw;
+        img{
+            width: 80vw;
+            height: 43vw;
+        }
     }
 
     .img-a-la-une {
@@ -111,7 +115,7 @@ section {
 
 @media screen and (max-width: 500px) {
     .header-a-la-une{
-        padding-top: 10vw;
+        padding-top: 5vw;
         padding-bottom: 30vw;
     }
 
@@ -129,9 +133,13 @@ section {
     }
 
     .img-a-la-une-BG {
-        width: 95vw;
-        height: 53vw;
+        width: 76vw;
+            height: 140vw;
         border-radius: 3vw;
+        img{
+            width: 60vw;
+            height: 130vw;
+        }
     }
 
     .img-a-la-une {

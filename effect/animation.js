@@ -33,11 +33,12 @@ gsap.registerPlugin(ScrollTrigger);
 const projetCards = document.querySelectorAll('.projet-card');
 const startValue = window.innerWidth <= 900 ? "top 65%" : "top 70%";
 const endValue = window.innerWidth <= 900 ? "top 40%" : "top 30%";
+const startAnimation = window.innerWidth <= 900 ? "100" : "250";
 
 // Créer une animation pour chaque .projet-card
 projetCards.forEach(card => {
     gsap.fromTo(card, 
-        { opacity: 0.3, x: 250, scale: 0.7, willChange: "opacity, transform" },  // État initial
+        { opacity: 0.3, x: startAnimation, scale: 0.7, willChange: "opacity, transform" },  // État initial
         { 
             opacity: 1, 
             y: 0, 
@@ -50,9 +51,9 @@ projetCards.forEach(card => {
                 toggleActions: "play reverse play reverse", 
                 // markers: true,
                 onEnter: () => gsap.to(card, { opacity: 1, x: 0, scale: 1, duration: 1 }),
-                onLeave: () => gsap.to(card, { opacity: 0.3, x: 250, scale: 0.7, duration: 1 }),
+                onLeave: () => gsap.to(card, { opacity: 0.3, x: startAnimation, scale: 0.7, duration: 1 }),
                 onEnterBack: () => gsap.to(card, { opacity: 1, x: 0, scale: 1, duration: 1 }),
-                onLeaveBack: () => gsap.to(card, { opacity: 0.3, x: 250, scale: 0.7, duration: 1 })
+                onLeaveBack: () => gsap.to(card, { opacity: 0.3, x: startAnimation, scale: 0.7, duration: 1 })
             }
         }
     );
