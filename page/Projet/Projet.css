@@ -205,27 +205,6 @@ body {
     height: 35vw !important;
 }
 
-/* .cadre::after {
-    display: none;
-    content: "";
-    position: absolute;
-    width: 88.2%;
-    height: 4vw;
-    background: rgb(37,37,37);
-    background: linear-gradient(0deg, rgba(37,37,37,1) 0%, rgba(37,37,37,0.8337710084033614) 29%, rgba(37,37,37,0.53125) 59%, rgba(37,37,37,0) 99%);
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1)0.7s;
-    bottom: 1.9vw;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    
-}
-
-.cadre:hover::after {
-    display: block;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1)0.7s;
-} */
-
 .cadre img {
     width: 88%;
     border-radius: 0.5vw;
@@ -275,6 +254,109 @@ body {
     letter-spacing: 0.03vw;
     line-height: 130%;
     margin-top: 0;
+}
+
+@media screen and (min-width: 2600px) {
+    .header-container {
+        width: 40vw;
+    }
+    .header__links{
+        margin-bottom: 1vw;
+    }
+    .header__links img {
+        width: 1.2vw;
+        height: 1.2vw;
+    }
+    
+    .header__description span {
+        font-size: 1vw;
+        font-weight: 600;
+    }
+    
+    .header__title {
+        font-size: 6vw;
+    }
+
+    .createur {
+        font-size: 1vw;
+    }
+
+    .carte-container {
+        width: 55vw;
+        height: 27vw;
+    }
+    
+    #CarteVlcarte-container{
+        height: 37vw !important;
+    }
+    
+    .carte_cadre {
+        border-radius: 0.7vw;
+    }
+    
+    .carte_sub_cadre {
+        width: 85%;
+        height: 85%;
+        border-radius: 0.6w;
+    }
+    
+    .info {
+        width: 54vw;
+        margin-top: 7vw;
+        margin-bottom: 3vw;
+    }
+    
+    .info-left :nth-child(1),
+    .info-right :nth-child(1) {
+        font-size: 1vw;
+    }
+    
+    .info-left :nth-child(2),
+    .info-right :nth-child(2) {
+        font-size: 1.7vw;
+    }
+    
+    .carte {
+        align-items: center;
+        width: 60vw;
+    }
+    
+    .cadre {
+        width: 27vw;
+        height: 18vw;
+        border-radius: 0.5vw;
+        margin-top: 2vw;
+    }
+    
+    #CarteVlcadre{
+        height: 27vw !important;
+    }
+
+    .cadre img {
+        border-radius: 0.4vw;
+    }
+
+    .section-description {
+        width: 55vw;
+        margin-top: 7vw;
+        margin-bottom: 1vw;
+    }
+    
+    .description-text :nth-child(1) {
+        font-size: 1vw;
+        font-weight: 300;
+    }
+    
+    .description-text :nth-child(2) {
+        font-size: 2vw;
+        font-weight: 600;
+    }
+    
+    .description {
+        width: 55vw;
+        margin-bottom: 10vw;
+        font-size: 1vw;
+    }
 }
 
 @media screen and (max-width: 500px) {

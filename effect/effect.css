@@ -132,7 +132,6 @@ a {
     0% {
         transform: translate(-10px, -10px);
     }
-
     50% {
         transform: translate(-5px, -5px);
     }

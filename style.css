@@ -23,6 +23,12 @@ header {
     width: 90%;
     margin: 0 auto;
 }
+@media screen and (min-width: 2600px) {
+    body{
+        margin-left: 20% !important;
+        margin-right: 20% !important;
+    }
+}
 
 .header-location-container {
     display: flex;
@@ -49,6 +55,21 @@ header {
     display: flex;
     justify-content: flex-end;
     text-transform: capitalize;
+}
+
+@media screen and (min-width: 2600px) {
+    .header-location-container {
+        font-size: 1vw;
+    }
+
+    .header-location-gps {
+        font-size: 0.7vw;
+        left: 4.5vw;
+    }
+
+    .header-contact {
+        font-size: 1vw;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -85,6 +106,7 @@ header {
         font-weight: 700;
     }
 }
+
 
 .main-content-top {
     display: flex;
@@ -163,6 +185,40 @@ header {
     border-radius: 0.5vw;
     z-index: -1;
     right: -0.3vw;
+}
+
+@media screen and (min-width: 2600px) {
+    .main-content-top {
+        margin-top: 6vw;
+        width: 80%;
+        h1 {
+            font-size: 4vw;
+        }
+    }
+
+    .sub-title-top {
+        font-size: 1.2vw;
+    }
+
+    .sub-title-top::before {
+        width: 52%;
+    }
+
+    .main-content-bottom {
+        margin-top: -2.5vw;
+        width: 80%;
+        h1 {
+            font-size: 4vw;
+        }
+    }
+
+    .sub-title-bottom {
+        font-size: 1.2vw;
+    }
+
+    .sub-title-bottom::before {
+        width: 59%;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -290,6 +346,30 @@ header {
     display: flex;
     justify-content: space-around;
     width: 100%;
+}
+
+@media screen and (min-width: 2600px) {
+    .section {
+        height: 14vw;
+        margin-top: 6vw;
+        margin-bottom: 10vw;
+    }
+
+    .card-link-left,
+    .card-link-right {
+        width: 47%;
+        h2 {
+            font-size: 4vw;
+        }
+        p {
+            font-size: 1vw;
+        }
+    }
+
+    .card-sub-title-left,
+    .card-sub-title-right {
+        font-size: 1vw;
+    }
 }
 
 @media screen and (max-width: 900px) {

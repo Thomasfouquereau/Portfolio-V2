@@ -12,13 +12,6 @@ body {
     color: var(--couleur-secondaire);
 }
 
-@media screen and (min-width: 1900px) {
-    section {
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-}
-
 h1 {
     margin: 0;
 }
@@ -79,7 +72,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    img{
+
+    img {
         width: 70vw;
         height: 37vw;
     }
@@ -92,6 +86,32 @@ section {
     border-radius: 0.5vw;
 }
 
+@media screen and (min-width: 2600px) {
+
+    .header-a-la-une_content span {
+        font-size: 1.3vw;
+    }
+
+    .header-a-la-une_title {
+        font-size: 7vw !important;
+    }
+
+    .img-a-la-une-BG {
+        width: 61vw;
+        height: 34vw;
+
+        img {
+            width: 55vw;
+            height: 30vw;
+        }
+    }
+
+    .img-a-la-une {
+        width: 61vw;
+    }
+
+}
+
 @media screen and (max-width: 900px) {
     .header-a-la-une_content {
         margin-top: 10vw;
@@ -101,7 +121,8 @@ section {
     .img-a-la-une-BG {
         width: 93vw;
         height: 50vw;
-        img{
+
+        img {
             width: 80vw;
             height: 43vw;
         }
@@ -114,7 +135,7 @@ section {
 }
 
 @media screen and (max-width: 500px) {
-    .header-a-la-une{
+    .header-a-la-une {
         padding-top: 5vw;
         padding-bottom: 30vw;
     }
@@ -122,7 +143,7 @@ section {
     .header-a-la-une_content span {
         font-size: 3vw;
     }
-    
+
     .header-a-la-une_title {
         font-size: 13vw !important;
     }
@@ -136,7 +157,8 @@ section {
         width: 76vw;
         height: 140vw;
         border-radius: 3vw;
-        img{
+
+        img {
             width: 60vw;
             height: 130vw;
         }
@@ -148,7 +170,7 @@ section {
     }
 }
 
-.projet-nav{
+.projet-nav {
     margin-bottom: 7vw;
 }
 
@@ -235,11 +257,60 @@ section {
     color: #25bfa0;
 }
 
+@media screen and (min-width: 2600px) {
+
+    .projet-nav {
+        margin-bottom: 6vw;
+        overflow-y: hidden;
+    }
+
+    .projet-header {
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+    }
+
+    .projet-header span {
+        font-size: 1vw;
+    }
+
+    .projet-header h1 {
+        font-size: 7vw;
+    }
+
+    .last-projet {
+        width: 50vw;
+        margin-bottom: 10vw;
+    }
+
+    .last-projet span {
+        font-size: 1.5vw;
+    }
+
+    .projet-container {
+        margin-bottom: 6vw;
+    }
+
+    .projet-card {
+        width: 30vw;
+    }
+
+    .projet-card span {
+        font-size: 1.2vw;
+    }
+
+    .projet-card_title {
+        font-size: 4.5vw !important;
+        padding: 0.5vw;
+    }
+
+}
+
 @media screen and (max-width: 900px) {
-    .projet-nav{
+    .projet-nav {
         margin-bottom: 30vw;
         overflow-y: hidden;
     }
+
     .projet-header {
         margin-top: 25vw;
         margin-bottom: 25vw;
@@ -248,12 +319,12 @@ section {
     .projet-header span {
         font-size: 2vw;
     }
-    
+
     .projet-header h1 {
         font-size: 13vw;
     }
-    
-    .last-projet{
+
+    .last-projet {
         width: 80vw;
         margin-bottom: 25vw;
     }
@@ -261,15 +332,15 @@ section {
     .last-projet span {
         font-size: 4vw;
     }
-    
+
     .projet-card {
         width: 65vw;
     }
-    
+
     .projet-card span {
         font-size: 3vw;
     }
-    
+
     .projet-card_title {
         font-size: 9vw !important;
         padding: 3vw;
@@ -277,7 +348,7 @@ section {
 }
 
 @media screen and (max-width: 500px) {
-    .projet-nav{
+    .projet-nav {
         margin-bottom: 55vw;
     }
 
@@ -289,12 +360,12 @@ section {
     .projet-header span {
         font-size: 3.5vw;
     }
-    
+
     .projet-header h1 {
         font-size: 15vw;
     }
 
-    .last-projet{
+    .last-projet {
         width: 80vw;
         margin-bottom: 25vw;
     }
@@ -302,20 +373,20 @@ section {
     .last-projet span {
         font-size: 4vw;
     }
-    
+
     .projet-container {
         width: 80vw;
         margin-bottom: 20vw;
     }
-    
+
     .projet-card {
         width: 65vw;
     }
-    
+
     .projet-card span {
         font-size: 3vw;
     }
-    
+
     .projet-card_title {
         font-size: 10vw !important;
         padding: 3vw;
