@@ -7,13 +7,13 @@ a {
 }
 
 ::selection {
-    background: #9500ff; 
-    color: #ffffff; 
+    background: #9500ff;
+    color: #ffffff;
 }
 
 ::-moz-selection {
     background: #9500ff;
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 .custom-cursor {
@@ -26,32 +26,34 @@ a {
     transform: translate(-50%, -50%);
     z-index: 10000;
     mix-blend-mode: difference;
-    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, height 0.4s ease-in-out, border-radius 0.4s ease-in-out, background 0.2s ease-in-out;
+    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, height 0.4s ease-in-out, border-radius 0.4s ease-in-out, background-image 0.4s ease-in-out, background-size 0.4s ease-in-out, mix-blend-mode 0.4s ease-in-out, border-left 0.4s ease-in-out, border-right 0.4s ease-in-out, border-top 0.4s ease-in-out, border-bottom 0.4s ease-in-out;
 }
 
-.custom-cursor.zoom{
+.custom-cursor.zoom {
     transform: translate(-50%, -50%) scale(2);
     border-radius: 50%;
-} 
+}
 
 .custom-cursor.cursorChangeRenolandes {
     transform: translate(-50%, -50%) scale(2);
     background-image: url('../addon/renolandes.png');
     background-size: cover;
     border-radius: 0.1vw;
-    width: 75px;
-    height: 40px;
+    width: 85px;
+    height: 45px;
     mix-blend-mode: normal;
+    z-index: 10000;
 }
 
 .custom-cursor.cursorChangeNihongo {
     transform: translate(-50%, -50%) scale(2);
-    background-image: url('../addon/Nihongo .jpg');
+    background-image: url('../addon/Nihongo.jpg');
     background-size: cover;
     border-radius: 0.1vw;
-    width: 75px;
-    height: 40px;
+    width: 85px;
+    height: 45px;
     mix-blend-mode: normal;
+    animation: cursorAnimation 2s infinite;
 }
 
 .custom-cursor.cursorChangeA-TechPro {
@@ -59,8 +61,8 @@ a {
     background-image: url('../addon/A-TechPro.png');
     background-size: cover;
     border-radius: 0.1vw;
-    width: 75px;
-    height: 40px;
+    width: 85px;
+    height: 45px;
     mix-blend-mode: normal;
 }
 
@@ -69,17 +71,18 @@ a {
     background-image: url('../addon/Cvl.png');
     background-size: cover;
     border-radius: 0.1vw;
-    width: 75px;
-    height: 50px;
+    width: 85px;
+    height: 45px;
     mix-blend-mode: normal;
 }
+
 .custom-cursor.cursorChangeRenolandesV1 {
     transform: translate(-50%, -50%) scale(2);
     background-image: url('../addon/RenolandesV1.png');
     background-size: cover;
     border-radius: 0.1vw;
-    width: 75px;
-    height: 40px;
+    width: 85px;
+    height: 45px;
     mix-blend-mode: normal;
 }
 
@@ -88,94 +91,158 @@ a {
     background-image: url('../addon/Site Presentation.png');
     background-size: cover;
     border-radius: 0.1vw;
-    width: 75px;
-    height: 40px;
+    width: 85px;
+    height: 45px;
     mix-blend-mode: normal;
 }
 
-.custom-cursor.cursorChangeName{
+@keyframes cursorAnimationAfterLeft {
+    0% {
+        transform: translate(10px, 10px);
+    }
+
+    50% {
+        transform: translate(5px, 5px);
+    }
+
+    100% {
+        transform: translate(10px, 10px);
+    }
+}
+
+.custom-cursor.cursorChangeRenolandes::after, 
+.custom-cursor.cursorChangeNihongo::after, 
+.custom-cursor.cursorChangeA-TechPro::after, 
+.custom-cursor.cursorChangeCvl::after, 
+.custom-cursor.cursorChangeRenolandesV1::after, 
+.custom-cursor.cursorChangePresentation::after {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    width: 55px;
+    height: 25px;
+    border-top: 2.5px solid rgb(69, 69, 69);
+    border-left: 2.5px solid rgb(69, 69, 69);
+    border-radius: 0.155vw 0vw 0 0;
+    animation: cursorAnimationAfterLeft 2.4s infinite;
+}
+
+@keyframes cursorAnimationBeforeRight {
+    0% {
+        transform: translate(-10px, -10px);
+    }
+
+    50% {
+        transform: translate(-5px, -5px);
+    }
+
+    100% {
+        transform: translate(-10px, -10px);
+    }
+}
+
+.custom-cursor.cursorChangeRenolandes::before,
+.custom-cursor.cursorChangeNihongo::before,
+.custom-cursor.cursorChangeA-TechPro::before,
+.custom-cursor.cursorChangeCvl::before,
+.custom-cursor.cursorChangeRenolandesV1::before,
+.custom-cursor.cursorChangePresentation::before {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    right: -12px;
+    width: 55px;
+    height: 25px;
+    border-bottom: 2.5px solid rgb(69, 69, 69);
+    border-right: 2.5px solid rgb(69, 69, 69);
+    border-radius: 0 0 0.155vw 0;
+    animation: cursorAnimationBeforeRight 2.4s infinite;
+}
+
+.custom-cursor.cursorChangeName {
     transform: translate(-50%, -50%) scale(2);
     width: 40px;
     height: 50px;
     border-radius: 0.1vw;
-} 
+}
 
-.custom-cursor.cursorChangesub-title-top{
+.custom-cursor.cursorChangesub-title-top {
     transform: translate(-50%, -50%) scale(2);
     width: 110px;
     height: 38px;
     border-radius: 0.4vw;
-} 
+}
 
-.custom-cursor.cursorChangesub-title-bottom{
+.custom-cursor.cursorChangesub-title-bottom {
     transform: translate(-50%, -50%) scale(2);
     width: 95px;
     height: 38px;
     border-radius: 0.4vw;
-} 
+}
 
-.custom-cursor.cursorChangeContact{
+.custom-cursor.cursorChangeContact {
     transform: translate(-50%, -50%) scale(2);
     width: 80px;
     height: 30px;
     border-radius: 1vw;
-} 
+}
 
-.custom-cursor.cursorChangeTitle{
+.custom-cursor.cursorChangeTitle {
     transform: translate(-50%, -50%) scale(2);
     width: 70px;
     height: 85px;
     border-radius: 0.3vw;
-} 
+}
 
-.custom-cursor.cursorChangeImg{
+.custom-cursor.cursorChangeImg {
     transform: translate(-50%, -50%) scale(2);
     width: 75px;
     height: 55px;
     border-radius: 0.3vw;
-} 
+}
 
-.custom-cursor.cursorChangeTitlePROJET{
+.custom-cursor.cursorChangeTitlePROJET {
     transform: translate(-50%, -50%) scale(2);
     width: 80px;
     height: 105px;
     border-radius: 0.3vw;
-} 
+}
 
-.custom-cursor.cursorChangeDesign{
+.custom-cursor.cursorChangeDesign {
     transform: translate(-50%, -50%) scale(2);
     width: 85px;
     height: 34px;
     border-radius: 0.3vw;
-} 
+}
 
-.custom-cursor.cursorChangeDev{
+.custom-cursor.cursorChangeDev {
     transform: translate(-50%, -50%) scale(2);
     width: 100px;
     height: 34px;
     border-radius: 0.3vw;
 }
 
-.custom-cursor.cursorChangeStatus{
+.custom-cursor.cursorChangeStatus {
     transform: translate(-50%, -50%) scale(2);
     width: 100px;
     height: 34px;
-    border-radius: 0.3vw  1vw;
-} 
+    border-radius: 0.3vw 1vw;
+}
 
-.custom-cursor.cursorChangeDescription{
+.custom-cursor.cursorChangeDescription {
     transform: translate(-50%, -50%) scale(2);
     width: 160px;
     height: 34px;
     border-radius: 0.3vw;
-} 
+}
 
-.custom-cursor.cursorChangeDescription-text{
+.custom-cursor.cursorChangeDescription-text {
     transform: translate(-50%, -50%) scale(2);
     width: 12px;
     height: 25px;
     border-radius: 0.1vw;
-} 
+}
 
 @media (max-width: 900px) {
     body {
