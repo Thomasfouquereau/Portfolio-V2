@@ -38,7 +38,7 @@ a {
     transform: translate(-50%, -50%) scale(2);
     background-image: url('../addon/renolandes.png');
     background-size: cover;
-    border-radius: 0.1vw;
+    border-radius: 0.07vw;
     width: 85px;
     height: 45px;
     mix-blend-mode: normal;
@@ -49,7 +49,7 @@ a {
     transform: translate(-50%, -50%) scale(2);
     background-image: url('../addon/Nihongo.jpg');
     background-size: cover;
-    border-radius: 0.1vw;
+    border-radius: 0.07vw;
     width: 85px;
     height: 45px;
     mix-blend-mode: normal;
@@ -60,7 +60,7 @@ a {
     transform: translate(-50%, -50%) scale(2);
     background-image: url('../addon/A-TechPro.png');
     background-size: cover;
-    border-radius: 0.1vw;
+    border-radius: 0.07vw;
     width: 85px;
     height: 45px;
     mix-blend-mode: normal;
@@ -70,7 +70,7 @@ a {
     transform: translate(-50%, -50%) scale(2);
     background-image: url('../addon/Cvl.png');
     background-size: cover;
-    border-radius: 0.1vw;
+    border-radius: 0.07vw;
     width: 85px;
     height: 45px;
     mix-blend-mode: normal;
@@ -80,7 +80,7 @@ a {
     transform: translate(-50%, -50%) scale(2);
     background-image: url('../addon/RenolandesV1.png');
     background-size: cover;
-    border-radius: 0.1vw;
+    border-radius: 0.07vw;
     width: 85px;
     height: 45px;
     mix-blend-mode: normal;
@@ -90,7 +90,7 @@ a {
     transform: translate(-50%, -50%) scale(2);
     background-image: url('../addon/Site Presentation.png');
     background-size: cover;
-    border-radius: 0.1vw;
+    border-radius: 0.07vw;
     width: 85px;
     height: 45px;
     mix-blend-mode: normal;
@@ -101,8 +101,12 @@ a {
         transform: translate(10px, 10px);
     }
 
-    50% {
+    30% {
         transform: translate(5px, 5px);
+    }
+
+    75% {
+        transform: translate(10px, 10px);
     }
 
     100% {
@@ -110,11 +114,11 @@ a {
     }
 }
 
-.custom-cursor.cursorChangeRenolandes::after, 
-.custom-cursor.cursorChangeNihongo::after, 
-.custom-cursor.cursorChangeA-TechPro::after, 
-.custom-cursor.cursorChangeCvl::after, 
-.custom-cursor.cursorChangeRenolandesV1::after, 
+.custom-cursor.cursorChangeRenolandes::after,
+.custom-cursor.cursorChangeNihongo::after,
+.custom-cursor.cursorChangeA-TechPro::after,
+.custom-cursor.cursorChangeCvl::after,
+.custom-cursor.cursorChangeRenolandesV1::after,
 .custom-cursor.cursorChangePresentation::after {
     content: '';
     position: absolute;
@@ -125,15 +129,20 @@ a {
     border-top: 2.5px solid rgb(69, 69, 69);
     border-left: 2.5px solid rgb(69, 69, 69);
     border-radius: 0.155vw 0vw 0 0;
-    animation: cursorAnimationAfterLeft 2.4s infinite;
+    animation: cursorAnimationAfterLeft 1.7s infinite;
 }
 
 @keyframes cursorAnimationBeforeRight {
     0% {
         transform: translate(-10px, -10px);
     }
-    50% {
+
+    30% {
         transform: translate(-5px, -5px);
+    }
+
+    75% {
+        transform: translate(-10px, -10px);
     }
 
     100% {
@@ -156,7 +165,7 @@ a {
     border-bottom: 2.5px solid rgb(69, 69, 69);
     border-right: 2.5px solid rgb(69, 69, 69);
     border-radius: 0 0 0.155vw 0;
-    animation: cursorAnimationBeforeRight 2.4s infinite;
+    animation: cursorAnimationBeforeRight 1.7s infinite;
 }
 
 .custom-cursor.cursorChangeName {
