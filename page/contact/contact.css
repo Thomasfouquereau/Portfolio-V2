@@ -392,7 +392,7 @@ input::placeholder {
 .contact-form-E-mail {
     font-size: 1vw;
     font-weight: 400;
-    width: 100%;
+    max-width: 100%;
     height: 2vw;
     border-radius: 0.4vw;
     padding: 0vw;
@@ -403,7 +403,7 @@ input::placeholder {
 .contact-form-description {
     font-size: 1vw;
     font-weight: 400;
-    width: 100%;
+    max-width: 100%;
     height: 6vw;
     border-radius: 0.4vw;
     padding: 0vw;
