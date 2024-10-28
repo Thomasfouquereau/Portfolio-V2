@@ -39,6 +39,10 @@ input:focus{
     outline: none;
 }
 
+input::placeholder{
+    color: var(--couleur-secondaire);
+}
+
 .contact-form{
     display: none;
 }
@@ -302,17 +306,18 @@ input:focus{
     flex-direction: column;
     gap: 2vw;
     margin-top: 2vw;
+    display: none;
 }
 
 .contact-form-container{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 2vw;
+    gap: 1.2vw;
     width: 30%;
 }
 
-.contact-form-choice, .contact-form-name{
+.contact-form-choice{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -334,7 +339,15 @@ input:focus{
     padding: 0.5vw;
 }
 
-.contact-form-name-item{
+.contact-form-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+    width: 100%;
+}
+
+.contact-form-Prenom, .contact-form-Nom{
     font-size: 1vw;
     font-weight: 400;
     width: 45%;
@@ -342,6 +355,9 @@ input:focus{
     border-radius: 0.4vw;
     padding: 0vw;
     background-color: transparent;
+    position: relative;
+    display: inline-block;
+    padding-left: 0.3vw;
 }
 
 .contact-form-budget{
@@ -352,9 +368,10 @@ input:focus{
     border-radius: 0.4vw;
     padding: 0vw;
     background-color: transparent;
+    padding-left: 0.3vw;
 }
 
-.contact-form-item{
+.contact-form-Nom-en, .contact-form-E-mail{
     font-size: 1vw;
     font-weight: 400;
     width: 100%;
@@ -362,6 +379,7 @@ input:focus{
     border-radius: 0.4vw;
     padding: 0vw;
     background-color: transparent;
+    padding-left: 0.3vw;
 }
 
 .contact-form-description{
@@ -372,6 +390,8 @@ input:focus{
     border-radius: 0.4vw;
     padding: 0vw;
     background-color: transparent;
+    padding-left: 0.3vw;
+    display: flex;
 }
 
 .contact-form-submit{
@@ -390,6 +410,104 @@ input:focus{
     margin-top: -1vw;
 }
 
+@media screen and (max-width: 900px) {
+    
+    .contact-form-container{
+        gap: 3vw;
+        width: 55%;
+    }
+    
+    .contact-form-choice-item{
+        width: 45%;
+        height: 4.5vw;
+        border-radius: 0.7vw;
+        font-size: 2vw;
+    }
+    
+    .contact-form-Prenom, .contact-form-Nom{
+        font-size: 2vw;
+        height: 4.5vw;
+        border-radius: 0.7vw;
+        padding-left: 1vw;
+    }
+    
+    .contact-form-budget{
+        font-size: 2vw;
+        height: 4.5vw;
+        border-radius: 0.7vw;
+        padding-left: 1vw;
+    }
+    
+    .contact-form-Nom-en, .contact-form-E-mail{
+        font-size: 2vw;
+        height: 4.5vw;
+        border-radius: 0.7vw;
+        padding-left: 1vw;
+    }
+    
+    .contact-form-description{
+        font-size: 2vw;
+        height: 12vw;
+        border-radius: 0.7vw;
+        padding-left: 1vw;
+    }
+    
+    .contact-form-submit{
+        font-size: 2vw;
+        height: 4.5vw;
+        border-radius: 0.7vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    .contact-form-container{
+        gap: 5vw;
+        width: 80%;
+    }
+    
+    .contact-form-choice-item{
+        width: 48%;
+        height: 10vw;
+        border-radius: 1.7vw;
+        font-size: 4vw;
+    }
+    
+    .contact-form-Prenom, .contact-form-Nom{
+        height: 10vw;
+        border-radius: 1.7vw;
+        padding-left: 2vw;
+        font-size: 4vw;
+    }
+    
+    .contact-form-budget{
+        height: 10vw;
+        border-radius: 1.7vw;
+        padding-left: 2vw;
+        font-size: 4vw;
+    }
+    
+    .contact-form-Nom-en, .contact-form-E-mail{
+        height: 10vw;
+        border-radius: 1.7vw;
+        padding-left: 2vw;
+        font-size: 4vw;
+    }
+    
+    .contact-form-description{
+        font-size: 2vw;
+        height: 25vw;
+        padding-left: 2vw;
+        font-size: 4vw;
+    }
+    
+    .contact-form-submit{
+        height: 10vw;
+        border-radius: 1.7vw;
+        font-size: 4vw;
+    }
+}
+
 .form-contact-rapide{
     position: absolute;
     right: 5vw;
@@ -402,5 +520,45 @@ input:focus{
         font-size: 1.3vw;
         font-weight: 500;
         margin: 0;
+    }
+}
+
+.form-contact-rapide-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 2600px) {
+    .form-contact-rapide{
+        right: 12vw;
+    }
+    .contact-form{
+        margin-bottom: 10vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .form-contact-rapide{
+        position: relative;
+        gap: 2vw;
+        width: 100vw;
+        margin-left: 10vw;
+        margin-top: 5vw;
+        p{
+            font-size: 1.3vw;
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+    .contact-form{
+        margin-bottom: 10vw;
+    }
+
+    .form-contact-rapide-container{
+        gap: 5vw;
+        flex-direction: row;
     }
 }
