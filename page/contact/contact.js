@@ -10,6 +10,30 @@ contactButton.addEventListener('click', () => {
 });
 
 const submitButton = document.querySelector('.contact-form-submit');
+const DéveloppementChoice = document.querySelector('#DéveloppementChoice');
+const DesignChoice = document.querySelector('#DesignChoice');
+
+let Développement = false;
+let Design = false;
+
+const updateSelection = (choice) => {
+    if (choice === 'Développement') {
+        Développement = !Développement;
+        DéveloppementChoice.style.border = Développement ? '2px solid green' : 'none';
+    } else if (choice === 'Design') {
+        Design = !Design;
+        DesignChoice.style.border = Design ? '2px solid green' : 'none';
+    }
+    console.log({ Développement, Design });
+};
+
+DéveloppementChoice.addEventListener('click', () => {
+    updateSelection('Développement');
+});
+
+DesignChoice.addEventListener('click', () => {
+    updateSelection('Design');
+});
 
 // Ajouter un écouteur d'événement au bouton de soumission
 submitButton.addEventListener('click', (event) => {
@@ -20,15 +44,26 @@ submitButton.addEventListener('click', (event) => {
     const nom = document.querySelector('.contact-form-Nom').value;
     const budget = document.querySelector('.contact-form-budget').value;
     const nomEntreprise = document.querySelector('.contact-form-Nom-en').value;
-    const email = document.querySelector('.contact-form-E-mail').value;
-    const emailstyle = document.querySelector('.contact-form-E-mail');
-    const description = document.querySelector('.contact-form-description').value;
-    const descriptionstyle = document.querySelector('.contact-form-description');
+    const emailElement = document.querySelector('.contact-form-E-mail');
+    const email = emailElement.value;
+    const descriptionElement = document.querySelector('.contact-form-description');
+    const description = descriptionElement.value;
 
-    // Vérifier si les champs email et description sont remplis
-    if (email.trim() === '' || description.trim() === '') {
-        emailstyle.style.border = '2px solid red';
-        descriptionstyle.style.border = '2px solid red';
+    // Regex pour valider l'email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // Vérifier si les champs email et description sont remplis et si l'email est valide
+    if (email.trim() === '' || description.trim() === '' || !emailRegex.test(email)) {
+        if (email.trim() === '' || !emailRegex.test(email)) {
+            emailElement.style.border = '2px solid red';
+        } else {
+            emailElement.style.border = '2px solid #252525';
+        }
+        if (description.trim() === '') {
+            descriptionElement.style.border = '2px solid red';
+        } else {
+            descriptionElement.style.border = '2px solid #252525';
+        }
         return;
     }
 
@@ -39,7 +74,9 @@ submitButton.addEventListener('click', (event) => {
         budget,
         nomEntreprise,
         email,
-        description
+        description,
+        Développement,
+        Design
     };
 
     // Envoyer les données par email en utilisant EmailJS

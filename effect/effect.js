@@ -208,7 +208,7 @@ document.querySelectorAll('#cursorChangeDescription').forEach(element => {
     });
 });
 
-document.querySelectorAll('#cursorChangeDescription-text').forEach(element => {
+document.querySelectorAll('#cursorChangeDescription-text, input').forEach(element => {
     element.addEventListener('mouseenter', () => {
         customCursor.classList.add('cursorChangeDescription-text');
         element.classList.add('cursorChangeDescription-text');
@@ -216,5 +216,27 @@ document.querySelectorAll('#cursorChangeDescription-text').forEach(element => {
     element.addEventListener('mouseleave', () => {
         customCursor.classList.remove('cursorChangeDescription-text');
         element.classList.remove('cursorChangeDescription-text');
+    });
+});
+
+document.querySelectorAll('#cursorChangeContactRapide').forEach(element => {
+    element.addEventListener('mouseenter', () => {
+        customCursor.classList.add('cursorChangeContactRapide');
+        element.classList.add('cursorChangeContactRapide');
+    });
+    element.addEventListener('mouseleave', () => {
+        customCursor.classList.remove('cursorChangeContactRapide');
+        element.classList.remove('cursorChangeContactRapide');
+    });
+});
+
+document.querySelectorAll('#cursorChangetypeContactLink, #contact-forn-button').forEach(element => {
+    element.addEventListener('mouseenter', () => {
+        customCursor.classList.add('cursorChangetypeContactLink');
+        element.classList.add('cursorChangetypeContactLink');
+    });
+    element.addEventListener('mouseleave', () => {
+        customCursor.classList.remove('cursorChangetypeContactLink');
+        element.classList.remove('cursorChangetypeContactLink');
     });
 });

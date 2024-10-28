@@ -24,26 +24,26 @@ header {
     margin: 0 auto;
 }
 
-button{
+button {
     cursor: none;
     border: none;
-    
+
 }
 
-input{
+input {
     cursor: none;
     border: var (--couleur-secondaire) 1px solid;
 }
 
-input:focus{
+input:focus {
     outline: none;
 }
 
-input::placeholder{
+input::placeholder {
     color: var(--couleur-secondaire);
 }
 
-.contact-form{
+.contact-form {
     display: none;
 }
 
@@ -115,14 +115,14 @@ input::placeholder{
     }
 }
 
-.type-contact-container{
+.type-contact-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.type-contact{
+.type-contact {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,7 +131,7 @@ input::placeholder{
     gap: 7vw;
 }
 
-.type-contact-link{
+.type-contact-link {
     text-decoration: none;
     color: var(--couleur-principale);
     background-color: var(--couleur-secondaire);
@@ -143,16 +143,21 @@ input::placeholder{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
+}
+
+.type-contact-link:hover {
+    transform: scale(1.1);
 }
 
 @media screen and (min-width: 2600px) {
-    .type-contact{
+    .type-contact {
         margin-top: 3vw;
         margin-bottom: 4vw;
         gap: 5vw;
     }
-    
-    .type-contact-link{
+
+    .type-contact-link {
         width: 20vw;
         height: 10vw;
         font-size: 1.5vw;
@@ -161,12 +166,12 @@ input::placeholder{
 }
 
 @media screen and (max-width: 900px) {
-    .type-contact{
+    .type-contact {
         margin-top: 10vw;
         margin-bottom: 10vw;
     }
-    
-    .type-contact-link{
+
+    .type-contact-link {
         font-size: 3vw;
         width: 38vw;
         height: 19vw;
@@ -175,13 +180,13 @@ input::placeholder{
 }
 
 @media screen and (max-width: 500px) {
-    .type-contact{
+    .type-contact {
         margin-top: 5vw;
         margin-bottom: 10vw;
         flex-direction: column;
     }
-    
-    .type-contact-link{
+
+    .type-contact-link {
         font-size: 4.5vw;
         width: 75vw;
         height: 25vw;
@@ -189,27 +194,32 @@ input::placeholder{
     }
 }
 
-.contact-rapide{
+.contact-rapide {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 2vw;
-    p{
+    
+    p {
         font-size: 1.3vw;
         font-weight: 700;
         margin: 0;
     }
 }
 
-.contact-rapide-conatiner{
+.contact-rapide-item:hover {
+    transform: scale(1.1);
+}
+
+.contact-rapide-conatiner {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3vw;
 }
 
-.contact-rapide-item{
+.contact-rapide-item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,24 +231,26 @@ input::placeholder{
     height: 7vw;
     border-radius: 1vw;
     padding: 0.5vw;
-    img{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
+    img {
         width: 4vw;
         height: 4vw;
     }
 }
 
 @media screen and (min-width: 2600px) {
-    .contact-rapide{
+    .contact-rapide {
         gap: 1.5vw;
     }
 
-    .contact-rapide-item{
+    .contact-rapide-item {
         font-size: 1.1vw;
         width: 8vw;
         height: 5vw;
         border-radius: 0.8vw;
         padding: 0.4vw;
-        img{
+
+        img {
             width: 3.5vw;
             height: 3.5vw;
         }
@@ -246,26 +258,28 @@ input::placeholder{
 }
 
 @media screen and (max-width: 900px) {
-    .contact-rapide{
+    .contact-rapide {
         gap: 3vw;
-        p{
+
+        p {
             font-size: 3vw;
         }
     }
 
-    .contact-rapide-conatiner{
+    .contact-rapide-conatiner {
         flex-wrap: wrap;
         gap: 2vw;
         width: 80vw;
     }
 
-    .contact-rapide-item{
+    .contact-rapide-item {
         font-size: 2.5vw;
         width: 30vw;
         height: 14vw;
         border-radius: 2vw;
         padding: 1vw;
-        img{
+
+        img {
             width: 8vw;
             height: 8vw;
         }
@@ -273,33 +287,35 @@ input::placeholder{
 }
 
 @media screen and (max-width: 500px) {
-    .contact-rapide{
+    .contact-rapide {
         gap: 5vw;
-        p{
+
+        p {
             font-size: 4.5vw;
         }
     }
 
-    .contact-rapide-conatiner{
+    .contact-rapide-conatiner {
         flex-wrap: wrap;
         gap: 5vw;
         width: 80vw;
     }
 
-    .contact-rapide-item{
+    .contact-rapide-item {
         font-size: 4.5vw;
         width: 25vw;
         height: 18vw;
         border-radius: 3vw;
         padding: 2vw;
-        img{
+
+        img {
             width: 13vw;
             height: 13vw;
         }
     }
 }
 
-.contact-form{
+.contact-form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -309,7 +325,7 @@ input::placeholder{
     display: none;
 }
 
-.contact-form-container{
+.contact-form-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -317,7 +333,7 @@ input::placeholder{
     width: 30%;
 }
 
-.contact-form-choice{
+.contact-form-choice {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -325,7 +341,7 @@ input::placeholder{
     width: 100%;
 }
 
-.contact-form-choice-item{
+.contact-form-choice-item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -339,7 +355,7 @@ input::placeholder{
     padding: 0.5vw;
 }
 
-.contact-form-name{
+.contact-form-name {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -347,7 +363,8 @@ input::placeholder{
     width: 100%;
 }
 
-.contact-form-Prenom, .contact-form-Nom{
+.contact-form-Prenom,
+.contact-form-Nom {
     font-size: 1vw;
     font-weight: 400;
     width: 45%;
@@ -360,7 +377,7 @@ input::placeholder{
     padding-left: 0.3vw;
 }
 
-.contact-form-budget{
+.contact-form-budget {
     font-size: 1vw;
     font-weight: 400;
     width: 54%;
@@ -371,7 +388,8 @@ input::placeholder{
     padding-left: 0.3vw;
 }
 
-.contact-form-Nom-en, .contact-form-E-mail{
+.contact-form-Nom-en,
+.contact-form-E-mail {
     font-size: 1vw;
     font-weight: 400;
     width: 100%;
@@ -382,7 +400,7 @@ input::placeholder{
     padding-left: 0.3vw;
 }
 
-.contact-form-description{
+.contact-form-description {
     font-size: 1vw;
     font-weight: 400;
     width: 100%;
@@ -394,7 +412,7 @@ input::placeholder{
     display: flex;
 }
 
-.contact-form-submit{
+.contact-form-submit {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -411,48 +429,50 @@ input::placeholder{
 }
 
 @media screen and (max-width: 900px) {
-    
-    .contact-form-container{
+
+    .contact-form-container {
         gap: 3vw;
         width: 55%;
     }
-    
-    .contact-form-choice-item{
+
+    .contact-form-choice-item {
         width: 45%;
         height: 4.5vw;
         border-radius: 0.7vw;
         font-size: 2vw;
     }
-    
-    .contact-form-Prenom, .contact-form-Nom{
+
+    .contact-form-Prenom,
+    .contact-form-Nom {
         font-size: 2vw;
         height: 4.5vw;
         border-radius: 0.7vw;
         padding-left: 1vw;
     }
-    
-    .contact-form-budget{
+
+    .contact-form-budget {
         font-size: 2vw;
         height: 4.5vw;
         border-radius: 0.7vw;
         padding-left: 1vw;
     }
-    
-    .contact-form-Nom-en, .contact-form-E-mail{
+
+    .contact-form-Nom-en,
+    .contact-form-E-mail {
         font-size: 2vw;
         height: 4.5vw;
         border-radius: 0.7vw;
         padding-left: 1vw;
     }
-    
-    .contact-form-description{
+
+    .contact-form-description {
         font-size: 2vw;
         height: 12vw;
         border-radius: 0.7vw;
         padding-left: 1vw;
     }
-    
-    .contact-form-submit{
+
+    .contact-form-submit {
         font-size: 2vw;
         height: 4.5vw;
         border-radius: 0.7vw;
@@ -460,56 +480,58 @@ input::placeholder{
 }
 
 @media screen and (max-width: 500px) {
-    
-    .contact-form-container{
+
+    .contact-form-container {
         gap: 5vw;
         width: 80%;
     }
-    
-    .contact-form-choice-item{
+
+    .contact-form-choice-item {
         width: 48%;
         height: 10vw;
         border-radius: 1.7vw;
         font-size: 4vw;
     }
-    
-    .contact-form-Prenom, .contact-form-Nom{
+
+    .contact-form-Prenom,
+    .contact-form-Nom {
         height: 10vw;
         border-radius: 1.7vw;
         padding-left: 2vw;
         font-size: 4vw;
     }
-    
-    .contact-form-budget{
+
+    .contact-form-budget {
         height: 10vw;
         border-radius: 1.7vw;
         padding-left: 2vw;
         font-size: 4vw;
     }
-    
-    .contact-form-Nom-en, .contact-form-E-mail{
+
+    .contact-form-Nom-en,
+    .contact-form-E-mail {
         height: 10vw;
         border-radius: 1.7vw;
         padding-left: 2vw;
         font-size: 4vw;
     }
-    
-    .contact-form-description{
+
+    .contact-form-description {
         font-size: 2vw;
         height: 25vw;
         padding-left: 2vw;
         font-size: 4vw;
         border-radius: 1.7vw;
     }
-    
-    .contact-form-submit{
+
+    .contact-form-submit {
         height: 10vw;
         border-radius: 1.7vw;
         font-size: 4vw;
     }
 }
 
-.form-contact-rapide{
+.form-contact-rapide {
     position: absolute;
     right: 5vw;
     display: flex;
@@ -517,14 +539,15 @@ input::placeholder{
     align-items: center;
     gap: 2vw;
     flex-direction: column;
-    p{
+
+    p {
         font-size: 1.3vw;
         font-weight: 500;
         margin: 0;
     }
 }
 
-.form-contact-rapide-container{
+.form-contact-rapide-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -533,32 +556,35 @@ input::placeholder{
 }
 
 @media screen and (min-width: 2600px) {
-    .form-contact-rapide{
+    .form-contact-rapide {
         right: 12vw;
     }
-    .contact-form{
+
+    .contact-form {
         margin-bottom: 10vw;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .form-contact-rapide{
+    .form-contact-rapide {
         position: relative;
         gap: 2vw;
         width: 100vw;
         margin-left: 10vw;
         margin-top: 5vw;
-        p{
+
+        p {
             font-size: 1.3vw;
             font-weight: 500;
             margin: 0;
         }
     }
-    .contact-form{
+
+    .contact-form {
         margin-bottom: 10vw;
     }
 
-    .form-contact-rapide-container{
+    .form-contact-rapide-container {
         gap: 5vw;
         flex-direction: row;
     }
