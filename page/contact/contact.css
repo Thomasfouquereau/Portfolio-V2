@@ -499,6 +499,7 @@ input::placeholder{
         height: 25vw;
         padding-left: 2vw;
         font-size: 4vw;
+        border-radius: 1.7vw;
     }
     
     .contact-form-submit{
