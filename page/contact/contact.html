@@ -37,16 +37,16 @@
         <div class="contact-rapide">
             <p>Contact rapide</p>
             <div class="contact-rapide-conatiner">
-                <a class="contact-rapide-item" href="">
+                <a class="contact-rapide-item" href="mailto:thomas.fouquereau@gmail.com">
                     <img src="../../addon/mail-icon.svg" alt="mail-icon">
                 </a>
-                <a class="contact-rapide-item" href="">
+                <a class="contact-rapide-item" href="www.linkedin.com/in/thomas-fouquereau">
                     <img src="../../addon/linkedin-icon.svg" alt="linkedin-icon">
                 </a>
-                <a class="contact-rapide-item" href="">
+                <a class="contact-rapide-item" href="sms:+33782885227"></a>
                     <img src="../../addon/messages-icon.svg" alt="messages-icon">
                 </a>
-                <a class="contact-rapide-item" href="">
+                <a class="contact-rapide-item" href="tel:+33782885227">
                     <img src="../../addon/call-icon.svg" alt="call-icon">
                 </a>
             </div>
@@ -78,20 +78,27 @@
         <div class="form-contact-rapide">
             <p>Contact rapide</p>
             <div class="form-contact-rapide-container">
-                <a class="contact-rapide-item" href="">
+                <a class="contact-rapide-item" href="mailto:thomas.fouquereau@gmail.com">
                     <img src="../../addon/mail-icon.svg" alt="mail-icon">
                 </a>
-                <a class="contact-rapide-item" href="">
+                <a class="contact-rapide-item" href="www.linkedin.com/in/thomas-fouquereau">
                     <img src="../../addon/linkedin-icon.svg" alt="linkedin-icon">
                 </a>
             </div>
         </div>
     </section>
 
-
-
 </body>
-
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "eL-wYowH9ArBFPcBu",
+      });
+   })();
+</script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
 </html>
