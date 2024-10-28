@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../../effect/effect.css">
     <script src="../../effect/effect.js" defer></script>
+    <script src="./contact.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
@@ -29,7 +30,7 @@
             <a class="type-contact-link" href="">
                 <p>Prendre rendez-vous</p>
             </a>
-            <button class="type-contact-link">
+            <button class="type-contact-link" id="contact-forn-button">
                 <p>Contacter</p>
             </button>
         </div>
@@ -53,33 +54,33 @@
     </section>
 
     <section class="contact-form">
-        <div>
-            <div>
-                <button>
+        <div class="contact-form-container">
+            <div class="contact-form-choice">
+                <button class="contact-form-choice-item">
                     <p>Développement</p>
                 </button>
-                <button>
+                <button class="contact-form-choice-item">
                     <p>Ui/Ux Design</p>
                 </button>
             </div>
-            <div>
-                <input type="text" placeholder="Prenom">
-                <input type="text" placeholder="Nom">
+            <div class="contact-form-name">
+                <input class="contact-form-name-item" type="text" placeholder="Prenom">
+                <input class="contact-form-name-item" type="text" placeholder="Nom">
             </div>
-            <input type="text" placeholder="Budget">
-            <input type="text" placeholder="Nom de l'entreprise">
-            <input type="email" placeholder="E-mail">
-            <input type="text" placeholder="Description">
-            <button>
+            <input class="contact-form-budget" type="text" placeholder="Budget">
+            <input class="contact-form-item" type="text" placeholder="Nom de l'entreprise">
+            <input class="contact-form-item" type="email" placeholder="E-mail">
+            <input class="contact-form-description" type="text" placeholder="Description">
+            <button class="contact-form-submit" type="submit">
                 <p>Contacter</p>
             </button>
         </div>
-        <div>
+        <div class="form-contact-rapide">
             <p>Contact rapide</p>
-            <a href="">
+            <a class="contact-rapide-item" href="">
                 <img src="../../addon/mail-icon.svg" alt="mail-icon">
             </a>
-            <a href="">
+            <a class="contact-rapide-item" href="">
                 <img src="../../addon/linkedin-icon.svg" alt="linkedin-icon">
             </a>
         </div>

@@ -32,6 +32,11 @@ button{
 
 input{
     cursor: none;
+    border: var (--couleur-secondaire) 1px solid;
+}
+
+input:focus{
+    outline: none;
 }
 
 .contact-form{
@@ -287,5 +292,115 @@ input{
             width: 13vw;
             height: 13vw;
         }
+    }
+}
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vw;
+    margin-top: 2vw;
+}
+
+.contact-form-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vw;
+    width: 30%;
+}
+
+.contact-form-choice, .contact-form-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+    width: 100%;
+}
+
+.contact-form-choice-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--couleur-secondaire);
+    color: var(--couleur-principale);
+    font-size: 1vw;
+    font-weight: 400;
+    width: 45%;
+    height: 2.2vw;
+    border-radius: 0.4vw;
+    padding: 0.5vw;
+}
+
+.contact-form-name-item{
+    font-size: 1vw;
+    font-weight: 400;
+    width: 45%;
+    height: 2vw;
+    border-radius: 0.4vw;
+    padding: 0vw;
+    background-color: transparent;
+}
+
+.contact-form-budget{
+    font-size: 1vw;
+    font-weight: 400;
+    width: 54%;
+    height: 2vw;
+    border-radius: 0.4vw;
+    padding: 0vw;
+    background-color: transparent;
+}
+
+.contact-form-item{
+    font-size: 1vw;
+    font-weight: 400;
+    width: 100%;
+    height: 2vw;
+    border-radius: 0.4vw;
+    padding: 0vw;
+    background-color: transparent;
+}
+
+.contact-form-description{
+    font-size: 1vw;
+    font-weight: 400;
+    width: 100%;
+    height: 6vw;
+    border-radius: 0.4vw;
+    padding: 0vw;
+    background-color: transparent;
+}
+
+.contact-form-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--couleur-secondaire);
+    color: var(--couleur-principale);
+    font-size: 1vw;
+    font-weight: 500;
+    width: 100%;
+    height: 2vw;
+    border-radius: 0.4vw;
+    padding: 0.5vw;
+    cursor: pointer;
+    margin-top: -1vw;
+}
+
+.form-contact-rapide{
+    position: absolute;
+    right: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    flex-direction: column;
+    p{
+        font-size: 1.3vw;
+        font-weight: 500;
+        margin: 0;
     }
 }
