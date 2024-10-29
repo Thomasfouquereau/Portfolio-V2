@@ -645,11 +645,11 @@ input::placeholder {
         width: 100vw;
         margin-left: 10vw;
         margin-top: 5vw;
-
         p {
-            font-size: 1.3vw;
+            font-size: 4.5vw;
             font-weight: 500;
             margin: 0;
+            margin-bottom: 2vw;
         }
     }
 
