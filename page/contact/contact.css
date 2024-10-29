@@ -102,9 +102,8 @@ input::placeholder {
 
 @media screen and (max-width: 500px) {
     .back {
-        top: 90vh;
-        left: 80vw;
-        transform: translateX(-50%);
+        top: 2vh;
+        left: 65vw;
         width: 30vw;
         height: 10vw;
         font-size: 3vw;

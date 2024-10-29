@@ -438,6 +438,7 @@ a{
 @media screen and (max-width: 500px) {
     .header-container {
         width: 60vw;
+        margin-bottom: 15vw;
     }
 
     .header__links {
@@ -452,10 +453,12 @@ a{
     .header__description span {
         font-size: 4vw;
         font-weight: 600;
+        margin-bottom: 2vw;
     }
 
     .header__title {
         font-size: 10vw;
+        margin-bottom: 2vw;
     }
 
     .createur {
@@ -464,7 +467,7 @@ a{
 
     .carte-container {
         width: 90vw;
-        height: 50vw;
+        height: 70vw;
     }
 
     #CarteVlcarte-container {
@@ -476,25 +479,34 @@ a{
     }
 
     .carte_sub_cadre {
-        width: 85%;
-        height: 85%;
+        width: 90%;
+        height: 90%;
         border-radius: 1.5vw;
     }
 
     .info {
-        width: 90vw;
+        width: 85vw;
         margin-top: 15vw;
         margin-bottom: 10vw;
+        img{
+            width: 7vw;
+            height: 7vw;
+        }
     }
 
     .info-left :nth-child(1),
     .info-right :nth-child(1) {
         font-size: 3vw;
+        margin-bottom: 0.8vw;
     }
 
     .info-left :nth-child(2),
     .info-right :nth-child(2) {
         font-size: 5vw;
+    }
+
+    .info-right{
+        display: none;
     }
 
     .carte {
@@ -505,8 +517,8 @@ a{
     }
 
     .cadre {
-        width: 80vw;
-        height: 60vw;
+        width: 90vw;
+        height: 70vw;
         border-radius: 1.5vw;
         margin-top: 4vw;
     }
@@ -523,11 +535,16 @@ a{
         width: 90vw;
         margin-top: 15vw;
         margin-bottom: 2vw;
+        img{
+            width: 7vw;
+            height: 7vw;
+        }
     }
 
     .description-text :nth-child(1) {
         font-size: 2.5vw;
         font-weight: 300;
+        margin-bottom: 0.8vw;
     }
 
     .description-text :nth-child(2) {
@@ -543,5 +560,6 @@ a{
         letter-spacing: 0.06vw;
         line-height: 160%;
         font-weight: 500;
+        margin-top: 4vw;
     }
 }
