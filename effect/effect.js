@@ -240,3 +240,25 @@ document.querySelectorAll('#cursorChangetypeContactLink, #contact-forn-button').
         element.classList.remove('cursorChangetypeContactLink');
     });
 });
+
+document.querySelectorAll('#cursorChangetypeContactLink, #contact-forn-button').forEach(element => {
+    element.addEventListener('mouseenter', () => {
+        customCursor.classList.add('cursorChangetypeContactLink');
+        element.classList.add('cursorChangetypeContactLink');
+    });
+    element.addEventListener('mouseleave', () => {
+        customCursor.classList.remove('cursorChangetypeContactLink');
+        element.classList.remove('cursorChangetypeContactLink');
+    });
+});
+
+document.querySelectorAll('.back').forEach(element => {
+    element.addEventListener('mouseenter', () => {
+        customCursor.classList.add('cursorChangeback');
+        element.classList.add('cursorChangeback');
+    });
+    element.addEventListener('mouseleave', () => {
+        customCursor.classList.remove('cursorChangeback');
+        element.classList.remove('cursorChangeback');
+    });
+});

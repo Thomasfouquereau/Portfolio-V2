@@ -266,6 +266,13 @@ a {
     border-radius: 0.3vw;
 }
 
+.custom-cursor.cursorChangeback {
+    transform: translate(-50%, -50%) scale(2);
+    width: 129px;
+    height: 37px;
+    border-radius: 4px;
+}
+
 @media (max-width: 900px) {
     body {
         cursor: auto;

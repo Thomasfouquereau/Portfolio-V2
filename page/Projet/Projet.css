@@ -12,29 +12,103 @@ body {
     color: var(--couleur-tertiaire);
 }
 
+a{
+    text-decoration: none;
+}
+
 #A-TechProBG {
     background-color: #bcffda;
 }
 
-#RenoLandesBG{
+#RenoLandesBG {
     background-color: #88a3c6b6;
 }
 
-#NihongoBG{
+#NihongoBG {
     background-color: #f8e5e2;
 }
 
-#CarteVlBG{
+#CarteVlBG {
     background-color: #d2ccfb;
 }
 
-#RenoLandesV1BG{
+#RenoLandesV1BG {
     background-color: #dcdffe;
 }
 
-#SitePresBG{
+#SitePresBG {
     background-color: #fad6e0;
 }
+
+.back {
+    position: fixed;
+    top: 4vw;
+    left: 5vw;
+    width: 10vw;
+    height: 3vw;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.5vw;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.162);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 1vw;
+    color: var(--couleur-tertiaire);
+    img{
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+}
+
+@media screen and (min-width: 2600px) {
+    .back {
+        top: 3vw;
+        left: 15vw;
+        width: 7.5vw;
+        height: 2vw;
+        font-size: 0.5vw;
+        img{
+            width: 1vw;
+            height: 1vw;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .back {
+        top: 5vw;
+        left: 5vw;
+        width: 15vw;
+        height: 4.5vw;
+        font-size: 1.5vw;
+        img{
+            width: 2vw;
+            height: 2vw;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .back {
+        top: 7vw;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 25vw;
+        height: 5vw;
+        font-size: 2vw;
+        border-radius: 5px;
+        img{
+            width: 3vw;
+            height: 3vw;
+        }
+    }
+}
+
 
 .header-container {
     display: flex;
@@ -91,7 +165,7 @@ body {
     height: 37vw;
 }
 
-#CarteVlcarte-container{
+#CarteVlcarte-container {
     height: 47vw !important;
 }
 
@@ -107,34 +181,34 @@ body {
     position: absolute;
     width: 83%;
     height: 83%;
-    
+
     border-radius: 0.5vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-#A-TechPro{
+#A-TechPro {
     background-color: #00ff738f;
 }
 
-#RenoLandes{
+#RenoLandes {
     background-color: #215dabb6;
 }
 
-#Nihongo{
+#Nihongo {
     background-color: #f75c48b5;
 }
 
-#CarteVl{
+#CarteVl {
     background-color: #6a5ec8cf;
 }
 
-#RenoLandesV1{
+#RenoLandesV1 {
     background-color: #5465ffce;
 }
 
-#SitePres{
+#SitePres {
     background-color: #fa7498be;
 }
 
@@ -201,7 +275,7 @@ body {
     margin-top: 2vw;
 }
 
-#CarteVlcadre{
+#CarteVlcadre {
     height: 35vw !important;
 }
 
@@ -260,19 +334,21 @@ body {
     .header-container {
         width: 40vw;
     }
-    .header__links{
+
+    .header__links {
         margin-bottom: 1vw;
     }
+
     .header__links img {
         width: 1.2vw;
         height: 1.2vw;
     }
-    
+
     .header__description span {
         font-size: 1vw;
         font-weight: 600;
     }
-    
+
     .header__title {
         font-size: 6vw;
     }
@@ -285,50 +361,50 @@ body {
         width: 55vw;
         height: 27vw;
     }
-    
-    #CarteVlcarte-container{
+
+    #CarteVlcarte-container {
         height: 37vw !important;
     }
-    
+
     .carte_cadre {
         border-radius: 0.7vw;
     }
-    
+
     .carte_sub_cadre {
         width: 85%;
         height: 85%;
         border-radius: 0.6w;
     }
-    
+
     .info {
         width: 54vw;
         margin-top: 7vw;
         margin-bottom: 3vw;
     }
-    
+
     .info-left :nth-child(1),
     .info-right :nth-child(1) {
         font-size: 1vw;
     }
-    
+
     .info-left :nth-child(2),
     .info-right :nth-child(2) {
         font-size: 1.7vw;
     }
-    
+
     .carte {
         align-items: center;
         width: 60vw;
     }
-    
+
     .cadre {
         width: 27vw;
         height: 18vw;
         border-radius: 0.5vw;
         margin-top: 2vw;
     }
-    
-    #CarteVlcadre{
+
+    #CarteVlcadre {
         height: 27vw !important;
     }
 
@@ -341,17 +417,17 @@ body {
         margin-top: 7vw;
         margin-bottom: 1vw;
     }
-    
+
     .description-text :nth-child(1) {
         font-size: 1vw;
         font-weight: 300;
     }
-    
+
     .description-text :nth-child(2) {
         font-size: 2vw;
         font-weight: 600;
     }
-    
+
     .description {
         width: 55vw;
         margin-bottom: 10vw;
@@ -363,21 +439,21 @@ body {
     .header-container {
         width: 60vw;
     }
-    
+
     .header__links {
         margin-bottom: 2vw;
     }
-    
+
     .header__links img {
         width: 5vw;
         height: 5vw;
     }
-    
+
     .header__description span {
         font-size: 4vw;
         font-weight: 600;
     }
-    
+
     .header__title {
         font-size: 10vw;
     }
@@ -390,52 +466,52 @@ body {
         width: 90vw;
         height: 50vw;
     }
-    
-    #CarteVlcarte-container{
+
+    #CarteVlcarte-container {
         height: 67vw !important;
     }
-    
+
     .carte_cadre {
         border-radius: 2vw;
     }
-    
+
     .carte_sub_cadre {
         width: 85%;
         height: 85%;
         border-radius: 1.5vw;
     }
-    
+
     .info {
         width: 90vw;
         margin-top: 15vw;
         margin-bottom: 10vw;
     }
-    
+
     .info-left :nth-child(1),
     .info-right :nth-child(1) {
         font-size: 3vw;
     }
-    
+
     .info-left :nth-child(2),
     .info-right :nth-child(2) {
         font-size: 5vw;
     }
-    
+
     .carte {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 90vw;
     }
-    
+
     .cadre {
         width: 80vw;
         height: 60vw;
         border-radius: 1.5vw;
         margin-top: 4vw;
     }
-    
-    #CarteVlcadre{
+
+    #CarteVlcadre {
         height: 78vw !important;
     }
 
@@ -448,17 +524,17 @@ body {
         margin-top: 15vw;
         margin-bottom: 2vw;
     }
-    
+
     .description-text :nth-child(1) {
         font-size: 2.5vw;
         font-weight: 300;
     }
-    
+
     .description-text :nth-child(2) {
         font-size: 5vw;
         font-weight: 600;
     }
-    
+
     .description {
         width: 90vw;
         margin-bottom: 30vw;
