@@ -72,6 +72,51 @@ input::placeholder {
     }
 }
 
+@media screen and (min-width: 2600px) {
+    .back {
+        top: 3vw;
+        left: 15vw;
+        width: 7.5vw;
+        height: 2vw;
+        font-size: 0.5vw;
+        img{
+            width: 1vw;
+            height: 1vw;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .back {
+        top: 5vw;
+        left: 5vw;
+        width: 15vw;
+        height: 4.5vw;
+        font-size: 1.5vw;
+        img{
+            width: 2vw;
+            height: 2vw;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .back {
+        top: 90vh;
+        left: 80vw;
+        transform: translateX(-50%);
+        width: 30vw;
+        height: 10vw;
+        font-size: 3vw;
+        border-radius: 5px;
+        img{
+            width: 5vw;
+            height: 5vw;
+        }
+    }
+}
+
+
 .contact-form {
     display: none;
 }

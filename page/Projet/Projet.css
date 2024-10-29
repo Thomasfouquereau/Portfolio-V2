@@ -95,16 +95,16 @@ a{
 
 @media screen and (max-width: 500px) {
     .back {
-        top: 7vw;
-        left: 50%;
+        top: 90vh;
+        left: 80vw;
         transform: translateX(-50%);
-        width: 25vw;
-        height: 5vw;
-        font-size: 2vw;
+        width: 30vw;
+        height: 10vw;
+        font-size: 3vw;
         border-radius: 5px;
         img{
-            width: 3vw;
-            height: 3vw;
+            width: 5vw;
+            height: 5vw;
         }
     }
 }
