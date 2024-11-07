@@ -21,7 +21,7 @@ a {
     color: var(--couleur-secondaire);
 }
 
-section {
+.a-la-une {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -172,6 +172,10 @@ section {
 
 .projet-nav {
     margin-bottom: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .projet-header {

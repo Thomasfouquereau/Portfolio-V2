@@ -1,7 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio de Thomas Fouquereau, développeur front-end basé sur Le Mans. Découvrez mes projets et compétences.">
+    <meta name="keywords" content="Thomas Fouquereau, développeur front-end, portfolio, projets, compétences">
+    <meta property="og:title" content="Portfolio de Thomas Fouquereau">
+    <meta property="og:description" content="Portfolio de Thomas Fouquereau, développeur front-end basé sur Le Mans.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./page/ProjetNav/stylePN.css">
     <link rel="stylesheet" href="effect/effect.css">
@@ -9,9 +16,10 @@
     <script src="effect/animation.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <title>Portfolio V2</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Portfolio de Thomas Fouquereau</title>
 </head>
 
 <body>
@@ -22,41 +30,43 @@
         </div>
         <a class="header-contact" id="cursorChangeContact" href="./page/contact/contact.html">contact</a>
     </header>
-    <main >
-        <div class="main-content-top" >
-            <p class="sub-title-top">Front-end <span id="cursorChangesub-title-top">Developer</span></p>
-            <h1 id="cursorChangeName">Thomas</h1>
-        </div>
-        <div class="main-content-bottom">
-            <h1 id="cursorChangeName">Fouquereau</h1>
-            <p class="sub-title-bottom">Ui / Ux <span id="cursorChangesub-title-bottom">Designer</span></p>
-        </div>
+    <main>
+        <section>
+            <div class="main-content-top">
+                <p class="sub-title-top">Front-end <span id="cursorChangesub-title-top">Developer</span></p>
+                <h1 id="cursorChangeName">Thomas</h1>
+            </div>
+            <div class="main-content-bottom">
+                <h1 id="cursorChangeName">Fouquereau</h1>
+                <p class="sub-title-bottom">Ui / Ux <span id="cursorChangesub-title-bottom">Designer</span></p>
+            </div>
+        </section>
+        <section class="projects-Header">
+            <div class="section">
+                <a class="card-link-left" href="./page/Projet/Renolandes.html" id="cursorChangeRenolandes">
+                    <p>Dernier Projet Terminé</p>
+                    <h2>RenoLandes</h2>
+                    <div class="card-sub-title-left">
+                        <span>Site vitrine</span>
+                        <span>Terminé</span>
+                    </div>
+                </a>
+                <a class="card-link-right" href="./page/Projet/Nihongo.html" id="cursorChangeNihongo">
+                    <p>Projet en cours</p>
+                    <h2>NIHONGO</h2>
+                    <div class="card-sub-title-right">
+                        <span>Web app</span>
+                        <span>En cours</span>
+                    </div>
+                </a>
+            </div>
+        </section>
     </main>
-
-    <div class="section">
-        <a class="card-link-left" href="./page/Projet/Renolandes.html" id="cursorChangeRenolandes"  >
-            <p>Dernier Projet Terminé</p>
-            <h2>RenoLandes</h2>
-            <div class="card-sub-title-left">
-                <span>Site vitrine</span>
-                <span>Terminé</span>
-            </div>
-        </a>
-        <a class="card-link-right" href="./page/Projet/Nihongo.html" id="cursorChangeNihongo" >
-            <p>Projet en cours</p>
-            <h2>NIHONGO</h2>
-            <div class="card-sub-title-right">
-                <span>Web app</span>
-                <span>En cours</span>
-            </div>
-        </a>
-    </div>
-
-    <section>
+    <section class="a-la-une">
         <div class="header-a-la-une">
             <div class="header-a-la-une_content">
                 <span>Projet réalisé</span>
-                <span class="header-a-la-une_title" id="cursorChangeTitle" >NIHONGO</span>
+                <span class="header-a-la-une_title" id="cursorChangeTitle">NIHONGO</span>
                 <div>
                     <span>Web App</span>
                     <span>En cours</span>
@@ -64,10 +74,8 @@
             </div>
             <div id="cursorChangeImg" class="img-a-la-une-BG">
                 <picture>
-                    <source srcset="./addon/Nihongo .webp" type="image/webp">
-                    <source srcset="./addon/Nihongo .avif" type="image/avif">
-                    <source media="(max-width: 500px)" srcset="./addon/Nihongo-mobile.png">
-                    <img class="img-a-la-une" src="./addon/Nihongo.jpg" alt="NIHONGO">
+                    <source media="(max-width: 500px)" srcset="./addon/Nihongo-mobile.png 1x">
+                    <img class="img-a-la-une" src="./addon/Nihongo.jpg" alt="image du site NIHONGO">
                 </picture>
             </div>
         </div>
@@ -81,94 +89,106 @@
         </div>
         <div class="last-projet">
             <span>Dernier projet <br /> réalisé</span>
-            <img src="./addon/contact icon.svg">
+            <img src="./addon/contact icon.svg" alt="icon de contact">
         </div>
-
-        <div class="projet-container">
-            <div class="projet-card">
-                <div>
-                    <span id="cursorChangeDesign">Designer</span>
-                    <span id="EnCours">En cours</span>
-                </div>
-                <a id="cursorChangeNihongo" class="projet-card_title" href="./page/Projet/Nihongo.html">NIHONGO</a>
-                <div>
-                    <span id="cursorChangeDesign">Web App</span>
-                    <span id="cursorChangeDev">Développé</span>
+        <article>
+            <div class="projet-container">
+                <div class="projet-card">
+                    <div>
+                        <span id="cursorChangeDesign">Designer</span>
+                        <span id="EnCours">En cours</span>
+                    </div>
+                    <a id="cursorChangeNihongo" class="projet-card_title" href="./page/Projet/Nihongo.html">NIHONGO</a>
+                    <div>
+                        <span id="cursorChangeDesign">Web App</span>
+                        <span id="cursorChangeDev">Développé</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="projet-container">
-            <div class="projet-card">
-                <div>
-                    <span id="cursorChangeDesign">Designer</span>
-                    <span id="Terminee">Terminé</span>
-                </div>
-                <a class="projet-card_title" id="cursorChangeRenolandes" href="./page/Projet/Renolandes.html">RenoLandes</a>
-                <div>
-                    <span id="cursorChangeDev">Site vitrine</span>
-                    <span id="cursorChangeDev">développé</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="projet-container">
-            <div class="projet-card">
-                <div>
-                    <span id="cursorChangeDesign">Designer</span>
-                    <span id="EnCours">En cours</span>
-                </div>
-                <a class="projet-card_title" id="cursorChangeA-TechPro" href="./page/Projet/A-TechPro.html">A-TechPro</a>
-                <div>
-                    <span id="cursorChangeDev">Site vitrine</span>
-                    <span id="cursorChangeDev">développé</span>
+        </article>
+        <article>
+            <div class="projet-container">
+                <div class="projet-card">
+                    <div>
+                        <span id="cursorChangeDesign">Designer</span>
+                        <span id="Terminee">Terminé</span>
+                    </div>
+                    <a class="projet-card_title" id="cursorChangeRenolandes"
+                        href="./page/Projet/Renolandes.html">RenoLandes</a>
+                    <div>
+                        <span id="cursorChangeDev">Site vitrine</span>
+                        <span id="cursorChangeDev">développé</span>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="projet-container">
-            <div class="projet-card">
-                <div>
-                    <span id="cursorChangeDesign">Designer</span>
-                    <span id="EnCours">En cours</span>
-                </div>
-                <a class="projet-card_title" id="cursorChangeCvl" href="./page/Projet/CarteVl.html">Carte VL</a>
-                <div>
-                    <span id="cursorChangeDesign">Web App</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="projet-container">
-            <div class="projet-card">
-                <div>
-                    <span id="cursorChangeDesign">Designer</span>
-                    <span id="Terminee">Terminé</span>
-                </div>
-                <a class="projet-card_title" id="cursorChangeRenolandesV1" href="./page/Projet/RenolandesV1.html">RenoLandesV1</a>
-                <div>
-                    <span id="cursorChangeDev">Site vitrine</span>
-                    <span id="cursorChangeDev">développé</span>
+        </article>
+        <article>
+            <div class="projet-container">
+                <div class="projet-card">
+                    <div>
+                        <span id="cursorChangeDesign">Designer</span>
+                        <span id="EnCours">En cours</span>
+                    </div>
+                    <a class="projet-card_title" id="cursorChangeA-TechPro"
+                        href="./page/Projet/A-TechPro.html">A-TechPro</a>
+                    <div>
+                        <span id="cursorChangeDev">Site vitrine</span>
+                        <span id="cursorChangeDev">développé</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="projet-container">
-            <div class="projet-card">
-                <div>
-                    <span id="Terminee">Terminé</span>
-                </div>
-                <a class="projet-card_title" id="cursorChangePresentation" href="./page/Projet/SitePres.html">Template de présentation</a>
-                <div>
-                    <span id="cursorChangeDev">Portfolio</span>
-                    <span id="cursorChangeDev">développé</span>
+        </article>
+        <article>
+            <div class="projet-container">
+                <div class="projet-card">
+                    <div>
+                        <span id="cursorChangeDesign">Designer</span>
+                        <span id="EnCours">En cours</span>
+                    </div>
+                    <a class="projet-card_title" id="cursorChangeCvl" href="./page/Projet/CarteVl.html">Carte VL</a>
+                    <div>
+                        <span id="cursorChangeDesign">Web App</span>
+                    </div>
                 </div>
             </div>
-        </div>
+        </article>
+        <article>
+            <div class="projet-container">
+                <div class="projet-card">
+                    <div>
+                        <span id="cursorChangeDesign">Designer</span>
+                        <span id="Terminee">Terminé</span>
+                    </div>
+                    <a class="projet-card_title" id="cursorChangeRenolandesV1"
+                        href="./page/Projet/RenolandesV1.html">RenoLandesV1</a>
+                    <div>
+                        <span id="cursorChangeDev">Site vitrine</span>
+                        <span id="cursorChangeDev">développé</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="projet-container">
+                <div class="projet-card">
+                    <div>
+                        <span id="Terminee">Terminé</span>
+                    </div>
+                    <a class="projet-card_title" id="cursorChangePresentation"
+                        href="./page/Projet/SitePres.html">Template
+                        de présentation</a>
+                    <div>
+                        <span id="cursorChangeDev">Portfolio</span>
+                        <span id="cursorChangeDev">développé</span>
+                    </div>
+                </div>
+            </div>
+        </article>
     </section>
 </body>
 <script src="effect/effect.js" defer></script>
 <script src="effect/animation.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
 </html>
