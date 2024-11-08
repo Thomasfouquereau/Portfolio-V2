@@ -273,6 +273,16 @@ a {
     border-radius: 4px;
 }
 
+.cursorChangeValider{
+    background-image: url('../addon/valider.svg');
+    background-size: cover;
+    transform: translate(-50%, -50%) scale(2);
+    width: 129px;
+    height: 129px;
+    border-radius: 50%;
+    border: #78FB8C 2px solid;
+}
+
 @media (max-width: 900px) {
     body {
         cursor: auto;

@@ -35,31 +35,46 @@ DesignChoice.addEventListener('click', () => {
     updateSelection('Design');
 });
 
-// Ajouter un écouteur d'événement au bouton de soumission
+// Limiter les tentatives de soumission
+let submitAttempts = 0;
+const maxAttempts = 3;
+const resetTime = 60000; // 1 minute
+
+const resetAttempts = () => {
+    submitAttempts = 0;
+};
+
 submitButton.addEventListener('click', (event) => {
-    event.preventDefault(); // Empêcher le rechargement de la page
+
+    if (submitAttempts >= maxAttempts) {
+        alert('Vous avez atteint le nombre maximum de tentatives. Veuillez réessayer plus tard.');
+        return;
+    }
+
+    submitAttempts++;
+    setTimeout(resetAttempts, resetTime);
 
     // Récupérer les valeurs des champs du formulaire
-    const prenom = document.querySelector('.contact-form-Prenom').value;
-    const nom = document.querySelector('.contact-form-Nom').value;
-    const budget = document.querySelector('.contact-form-budget').value;
-    const nomEntreprise = document.querySelector('.contact-form-Nom-en').value;
+    const prenom = document.querySelector('.contact-form-Prenom').value.trim();
+    const nom = document.querySelector('.contact-form-Nom').value.trim();
+    const budget = document.querySelector('.contact-form-budget').value.trim();
+    const nomEntreprise = document.querySelector('.contact-form-Nom-en').value.trim();
     const emailElement = document.querySelector('.contact-form-E-mail');
-    const email = emailElement.value;
+    const email = emailElement.value.trim();
     const descriptionElement = document.querySelector('.contact-form-description');
-    const description = descriptionElement.value;
+    const description = descriptionElement.value.trim();
 
     // Regex pour valider l'email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     // Vérifier si les champs email et description sont remplis et si l'email est valide
-    if (email.trim() === '' || description.trim() === '' || !emailRegex.test(email)) {
-        if (email.trim() === '' || !emailRegex.test(email)) {
+    if (email === '' || description === '' || !emailRegex.test(email)) {
+        if (email === '' || !emailRegex.test(email)) {
             emailElement.style.border = '2px solid red';
         } else {
             emailElement.style.border = '2px solid #252525';
         }
-        if (description.trim() === '') {
+        if (description === '') {
             descriptionElement.style.border = '2px solid red';
         } else {
             descriptionElement.style.border = '2px solid #252525';
@@ -69,21 +84,27 @@ submitButton.addEventListener('click', (event) => {
 
     // Créer un objet contenant les données du formulaire
     const formData = {
-        prenom,
-        nom,
-        budget,
-        nomEntreprise,
-        email,
-        description,
+        prenom: DOMPurify.sanitize(prenom),
+        nom: DOMPurify.sanitize(nom),
+        budget: DOMPurify.sanitize(budget),
+        nomEntreprise: DOMPurify.sanitize(nomEntreprise),
+        email: DOMPurify.sanitize(email),
+        description: DOMPurify.sanitize(description),
         Développement,
         Design
     };
-
+    document.body.appendChild(customCursor);
     // Envoyer les données par email en utilisant EmailJS
     emailjs.send('service_f185lbk', 'template_pqfndtd', formData)
         .then((response) => {
             console.log('SUCCESS!', response.status, response.text);
+            event.preventDefault(); // Empêcher le rechargement de la page
+            customCursor.classList.add('cursorChangeValider');
+            setTimeout(() => {
+                customCursor.classList.remove('cursorChangeValider');
+            }, 2000);
         }, (error) => {
             console.log('FAILED...', error);
+            alert('Une erreur s\'est produite. Veuillez réessayer plus tard ou contacter nous via un autre moyen.');
         });
 });

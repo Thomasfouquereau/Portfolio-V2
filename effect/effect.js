@@ -4,7 +4,7 @@ customCursor.classList.add('custom-cursor');
 document.body.appendChild(customCursor);
 
 // Mettre à jour la position du curseur personnalisé en fonction des mouvements de la souris
-document.addEventListener("mousemove", function(event) {
+document.addEventListener("mousemove", function (event) {
     customCursor.style.left = `${event.clientX}px`;
     customCursor.style.top = `${event.clientY}px`;
 });
