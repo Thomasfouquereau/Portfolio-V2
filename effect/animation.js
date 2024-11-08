@@ -32,8 +32,8 @@
     gsap.registerPlugin(ScrollTrigger);
 
     const projetCards = document.querySelectorAll('.projet-card');
-    const startValue = window.innerWidth <= 900 ? "top 65%" : "top 70%";
-    const endValue = window.innerWidth <= 900 ? "top 40%" : "top 30%";
+    const startValue = window.innerWidth <= 900 ? "top 55%" : "top 70%";
+    const endValue = window.innerWidth <= 900 ? "top 35%" : "top 30%";
     const startAnimation = window.innerWidth <= 900 ? "100" : "250";
 
     // Créer une animation pour chaque .projet-card
