@@ -177,7 +177,7 @@ a{
     position: relative;
 }
 
-.carte_sub_cadre {
+.carte_sub_cadre, .carte_sub_cadre-app {
     position: absolute;
     width: 83%;
     height: 83%;
@@ -210,6 +210,18 @@ a{
 
 #SitePres {
     background-color: #fa7498be;
+}
+
+.carte_sub_cadre-app img {
+    position: absolute;
+    border-radius: 0.5vw;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--couleur-tertiaire);
+    padding: 1vw;
+    border-radius: 2vw;
 }
 
 .carte_sub_cadre img {
@@ -265,7 +277,7 @@ a{
     flex-wrap: wrap;
 }
 
-.cadre {
+.cadre,.cadre-mobile {
     width: 33vw;
     height: 25vw;
     background-color: var(--couleur-tertiaire);
@@ -288,6 +300,19 @@ a{
     transform: translate(-50%, -50%);
     transition: cubic-bezier(0.075, 0.82, 0.165, 1)0.7s;
     z-index: 1;
+}
+
+.cadre-mobile img{
+    height: 85%;
+    border-radius: 1.5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1)0.7s;
+    z-index: 1;
+    padding: 0.5vw;
+    background-color: #f75c48b5;
 }
 
 
@@ -400,6 +425,13 @@ a{
     .cadre {
         width: 27vw;
         height: 18vw;
+        border-radius: 0.5vw;
+        margin-top: 2vw;
+    }
+    
+    .cadre-mobile{
+        width: 27vw;
+        height: 27vw;
         border-radius: 0.5vw;
         margin-top: 2vw;
     }
@@ -523,12 +555,25 @@ a{
         margin-top: 4vw;
     }
 
+    .cadre-mobile{
+        width: 90vw;
+        height: 90vw;
+        border-radius: 1.5vw;
+        margin-top: 4vw;
+    }
+
     #CarteVlcadre {
         height: 90vw !important;
     }
 
     .cadre img {
         border-radius: 1vw;
+    }
+
+    .cadre-mobile img{
+        height: 85%;
+        border-radius: 5vw;
+        padding: 2vw;
     }
 
     .section-description {

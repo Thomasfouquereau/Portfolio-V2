@@ -56,6 +56,15 @@ a {
     animation: cursorAnimation 2s infinite;
 }
 
+.custom-cursor.cursorChangeNihongoApp {
+    transform: translate(-50%, -50%) scale(2);
+    background-image: url('../addon/Nihongo-app-mobile.png');
+    background-size: cover;
+    border-radius: 0.07vw;
+    height: 90px;
+    mix-blend-mode: normal;
+}
+
 .custom-cursor.cursorChangeA-TechPro {
     transform: translate(-50%, -50%) scale(2);
     background-image: url('../addon/A-TechPro.png');
@@ -132,6 +141,19 @@ a {
     animation: cursorAnimationAfterLeft 1.7s infinite;
 }
 
+.custom-cursor.cursorChangeNihongoApp::after {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    width: 25px;
+    height: 55px;
+    border-top: 2.5px solid rgb(69, 69, 69);
+    border-left: 2.5px solid rgb(69, 69, 69);
+    border-radius: 0.155vw 0vw 0 0;
+    animation: cursorAnimationAfterLeft 1.7s infinite;
+}
+
 @keyframes cursorAnimationBeforeRight {
     0% {
         transform: translate(-10px, -10px);
@@ -162,6 +184,19 @@ a {
     right: -12px;
     width: 55px;
     height: 25px;
+    border-bottom: 2.5px solid rgb(69, 69, 69);
+    border-right: 2.5px solid rgb(69, 69, 69);
+    border-radius: 0 0 0.155vw 0;
+    animation: cursorAnimationBeforeRight 1.7s infinite;
+}
+
+.custom-cursor.cursorChangeNihongoApp::before {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    right: -12px;
+    width: 25px;
+    height: 55px;
     border-bottom: 2.5px solid rgb(69, 69, 69);
     border-right: 2.5px solid rgb(69, 69, 69);
     border-radius: 0 0 0.155vw 0;

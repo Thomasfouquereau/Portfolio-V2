@@ -31,6 +31,17 @@ document.querySelectorAll('#cursorChangeNihongo').forEach(element => {
     });
 });
 
+document.querySelectorAll('#cursorChangeNihongoApp').forEach(element => {
+    element.addEventListener('mouseenter', () => {
+        customCursor.classList.add('cursorChangeNihongoApp');
+        element.classList.add('cursorChangeNihongoApp');
+    });
+    element.addEventListener('mouseleave', () => {
+        customCursor.classList.remove('cursorChangeNihongoApp');
+        element.classList.remove('cursorChangeNihongoApp');
+    });
+});
+
 document.querySelectorAll('#cursorChangeRenolandes').forEach(element => {
     element.addEventListener('mouseenter', () => {
         customCursor.classList.add('cursorChangeRenolandes');
