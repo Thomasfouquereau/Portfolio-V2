@@ -449,7 +449,7 @@ a{
         margin-top: 2vw;
     }
     
-    .cadre-mobile{
+    .cadre-mobile, .cadre-mobile-Change{
         width: 27vw;
         height: 27vw;
         border-radius: 0.5vw;
@@ -575,7 +575,7 @@ a{
         margin-top: 4vw;
     }
 
-    .cadre-mobile{
+    .cadre-mobile, .cadre-mobile-Change{
         width: 90vw;
         height: 90vw;
         border-radius: 1.5vw;
@@ -590,7 +590,7 @@ a{
         border-radius: 1vw;
     }
 
-    .cadre-mobile img{
+    .cadre-mobile, .cadre-mobile-Change img{
         height: 85%;
         border-radius: 5vw;
         padding: 2vw;
