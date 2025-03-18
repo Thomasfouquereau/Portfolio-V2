@@ -56,6 +56,15 @@ a {
     animation: cursorAnimation 2s infinite;
 }
 
+.custom-cursor.cursorChangeAppDeChange {
+    transform: translate(-50%, -50%) scale(2);
+    background-image: url('../addon/app-de-change-Acceuil.png');
+    background-size: cover;
+    border-radius: 0.15vw;
+    height: 86px;
+    mix-blend-mode: normal;
+}
+
 .custom-cursor.cursorChangeNihongoApp {
     transform: translate(-50%, -50%) scale(2);
     background-image: url('../addon/Nihongo-app-mobile.png');
@@ -141,7 +150,8 @@ a {
     animation: cursorAnimationAfterLeft 1.7s infinite;
 }
 
-.custom-cursor.cursorChangeNihongoApp::after {
+.custom-cursor.cursorChangeNihongoApp::after,
+.custom-cursor.cursorChangeAppDeChange::after {
     content: '';
     position: absolute;
     top: -12px;
@@ -190,7 +200,8 @@ a {
     animation: cursorAnimationBeforeRight 1.7s infinite;
 }
 
-.custom-cursor.cursorChangeNihongoApp::before {
+.custom-cursor.cursorChangeNihongoApp::before,
+.custom-cursor.cursorChangeAppDeChange::before {
     content: '';
     position: absolute;
     bottom: -12px;

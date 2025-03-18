@@ -40,6 +40,10 @@ a{
     background-color: #fad6e0;
 }
 
+#AppDeChangeBG {
+    background-color: #def1f2;
+}
+
 .back {
     position: fixed;
     top: 4vw;
@@ -212,6 +216,10 @@ a{
     background-color: #fa7498be;
 }
 
+#RealRate {
+    background-color: #70ABAF;
+}
+
 .carte_sub_cadre-app img {
     position: absolute;
     border-radius: 0.5vw;
@@ -277,7 +285,7 @@ a{
     flex-wrap: wrap;
 }
 
-.cadre,.cadre-mobile {
+.cadre,.cadre-mobile, .cadre-mobile-Change {
     width: 33vw;
     height: 25vw;
     background-color: var(--couleur-tertiaire);
@@ -315,6 +323,18 @@ a{
     background-color: #f75c48b5;
 }
 
+.cadre-mobile-Change img{
+    height: 85%;
+    border-radius: 1.5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1)0.7s;
+    z-index: 1;
+    padding: 0.5vw;
+    background-color: #70ABAF;
+}
 
 .section-description {
     width: 70vw;

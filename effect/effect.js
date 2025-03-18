@@ -31,6 +31,17 @@ document.querySelectorAll('#cursorChangeNihongo').forEach(element => {
     });
 });
 
+document.querySelectorAll('#cursorChangeAppDeChange').forEach(element => {
+    element.addEventListener('mouseenter', () => {
+        customCursor.classList.add('cursorChangeAppDeChange');
+        element.classList.add('cursorChangeAppDeChange');
+    });
+    element.addEventListener('mouseleave', () => {
+        customCursor.classList.remove('cursorChangeAppDeChange');
+        element.classList.remove('cursorChangeAppDeChange');
+    });
+});
+
 document.querySelectorAll('#cursorChangeNihongoApp').forEach(element => {
     element.addEventListener('mouseenter', () => {
         customCursor.classList.add('cursorChangeNihongoApp');
